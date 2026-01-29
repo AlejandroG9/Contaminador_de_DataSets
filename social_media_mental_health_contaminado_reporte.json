@@ -1,0 +1,1024 @@
+{
+  "caso1_normalizacion_categorias": {
+    "descripcion": "Problemas de normalización en categorías (mayúsculas, espacios, guiones)",
+    "total_problemas": 5600,
+    "problemas": [
+      {
+        "indice": 5238,
+        "columna": "Gender",
+        "valor_original": "Female",
+        "valor_contaminado": "Female "
+      },
+      {
+        "indice": 912,
+        "columna": "Gender",
+        "valor_original": "Male",
+        "valor_contaminado": "male"
+      },
+      {
+        "indice": 204,
+        "columna": "Gender",
+        "valor_original": "Female",
+        "valor_contaminado": "  Male  "
+      },
+      {
+        "indice": 6074,
+        "columna": "Gender",
+        "valor_original": "Male",
+        "valor_contaminado": "  Male  "
+      },
+      {
+        "indice": 2253,
+        "columna": "Gender",
+        "valor_original": "Female",
+        "valor_contaminado": "  Male  "
+      },
+      {
+        "indice": 2006,
+        "columna": "Gender",
+        "valor_original": "Female",
+        "valor_contaminado": "male"
+      },
+      {
+        "indice": 1828,
+        "columna": "Gender",
+        "valor_original": "Female",
+        "valor_contaminado": "  Male  "
+      },
+      {
+        "indice": 1143,
+        "columna": "Gender",
+        "valor_original": "Female",
+        "valor_contaminado": "FEMALE"
+      },
+      {
+        "indice": 6033,
+        "columna": "Gender",
+        "valor_original": "Male",
+        "valor_contaminado": "MALE"
+      },
+      {
+        "indice": 839,
+        "columna": "Gender",
+        "valor_original": "Female",
+        "valor_contaminado": "MALE"
+      },
+      {
+        "indice": 5543,
+        "columna": "Gender",
+        "valor_original": "Female",
+        "valor_contaminado": "  Male  "
+      },
+      {
+        "indice": 6067,
+        "columna": "Gender",
+        "valor_original": "Male",
+        "valor_contaminado": "Female "
+      },
+      {
+        "indice": 7308,
+        "columna": "Gender",
+        "valor_original": "Female",
+        "valor_contaminado": " Male"
+      },
+      {
+        "indice": 4467,
+        "columna": "Gender",
+        "valor_original": "Male",
+        "valor_contaminado": "FEMALE"
+      },
+      {
+        "indice": 712,
+        "columna": "Gender",
+        "valor_original": "Female",
+        "valor_contaminado": "male"
+      },
+      {
+        "indice": 4837,
+        "columna": "Gender",
+        "valor_original": "Male",
+        "valor_contaminado": " Male"
+      },
+      {
+        "indice": 3456,
+        "columna": "Gender",
+        "valor_original": "Male",
+        "valor_contaminado": "MALE"
+      },
+      {
+        "indice": 260,
+        "columna": "Gender",
+        "valor_original": "Male",
+        "valor_contaminado": "  Male  "
+      },
+      {
+        "indice": 244,
+        "columna": "Gender",
+        "valor_original": "Male",
+        "valor_contaminado": "male"
+      },
+      {
+        "indice": 767,
+        "columna": "Gender",
+        "valor_original": "Male",
+        "valor_contaminado": "FEMALE"
+      }
+    ]
+  },
+  "caso2_validacion_rangos": {
+    "descripcion": "Valores numéricos fuera de rangos válidos o lógicos",
+    "total_problemas": 800,
+    "problemas": [
+      {
+        "indice": 6466,
+        "columna": "Age",
+        "valor_original": 18,
+        "valor_contaminado": 25,
+        "problema": "Valor fuera de rango válido (18-22)"
+      },
+      {
+        "indice": 6887,
+        "columna": "Age",
+        "valor_original": 19,
+        "valor_contaminado": 100,
+        "problema": "Valor fuera de rango válido (18-22)"
+      },
+      {
+        "indice": 1586,
+        "columna": "Age",
+        "valor_original": 20,
+        "valor_contaminado": 100,
+        "problema": "Valor fuera de rango válido (18-22)"
+      },
+      {
+        "indice": 7408,
+        "columna": "Age",
+        "valor_original": 18,
+        "valor_contaminado": 25,
+        "problema": "Valor fuera de rango válido (18-22)"
+      },
+      {
+        "indice": 4695,
+        "columna": "Age",
+        "valor_original": 18,
+        "valor_contaminado": 15,
+        "problema": "Valor fuera de rango válido (18-22)"
+      },
+      {
+        "indice": 1032,
+        "columna": "Age",
+        "valor_original": 19,
+        "valor_contaminado": 17,
+        "problema": "Valor fuera de rango válido (18-22)"
+      },
+      {
+        "indice": 5221,
+        "columna": "Age",
+        "valor_original": 18,
+        "valor_contaminado": 0,
+        "problema": "Valor fuera de rango válido (18-22)"
+      },
+      {
+        "indice": 4168,
+        "columna": "Age",
+        "valor_original": 18,
+        "valor_contaminado": 25,
+        "problema": "Valor fuera de rango válido (18-22)"
+      },
+      {
+        "indice": 2099,
+        "columna": "Age",
+        "valor_original": 20,
+        "valor_contaminado": 17,
+        "problema": "Valor fuera de rango válido (18-22)"
+      },
+      {
+        "indice": 2911,
+        "columna": "Age",
+        "valor_original": 19,
+        "valor_contaminado": 30,
+        "problema": "Valor fuera de rango válido (18-22)"
+      },
+      {
+        "indice": 3448,
+        "columna": "Age",
+        "valor_original": 18,
+        "valor_contaminado": 30,
+        "problema": "Valor fuera de rango válido (18-22)"
+      },
+      {
+        "indice": 3943,
+        "columna": "Age",
+        "valor_original": 20,
+        "valor_contaminado": 23,
+        "problema": "Valor fuera de rango válido (18-22)"
+      },
+      {
+        "indice": 5936,
+        "columna": "Age",
+        "valor_original": 19,
+        "valor_contaminado": 30,
+        "problema": "Valor fuera de rango válido (18-22)"
+      },
+      {
+        "indice": 5086,
+        "columna": "Age",
+        "valor_original": 19,
+        "valor_contaminado": 100,
+        "problema": "Valor fuera de rango válido (18-22)"
+      },
+      {
+        "indice": 3642,
+        "columna": "Age",
+        "valor_original": 21,
+        "valor_contaminado": 30,
+        "problema": "Valor fuera de rango válido (18-22)"
+      },
+      {
+        "indice": 1523,
+        "columna": "Age",
+        "valor_original": 19,
+        "valor_contaminado": 15,
+        "problema": "Valor fuera de rango válido (18-22)"
+      },
+      {
+        "indice": 1991,
+        "columna": "Age",
+        "valor_original": 18,
+        "valor_contaminado": 17,
+        "problema": "Valor fuera de rango válido (18-22)"
+      },
+      {
+        "indice": 1127,
+        "columna": "Age",
+        "valor_original": 19,
+        "valor_contaminado": 15,
+        "problema": "Valor fuera de rango válido (18-22)"
+      },
+      {
+        "indice": 6529,
+        "columna": "Age",
+        "valor_original": 20,
+        "valor_contaminado": 30,
+        "problema": "Valor fuera de rango válido (18-22)"
+      },
+      {
+        "indice": 361,
+        "columna": "Age",
+        "valor_original": 18,
+        "valor_contaminado": 100,
+        "problema": "Valor fuera de rango válido (18-22)"
+      }
+    ]
+  },
+  "caso3_outliers": {
+    "descripcion": "Outliers estadísticamente extremos pero técnicamente válidos",
+    "total_problemas": 800,
+    "problemas": [
+      {
+        "indice": 6152,
+        "columna": "Daily_Screen_Time_Hours",
+        "valor_original": 5.34,
+        "valor_contaminado": 23.5,
+        "problema": "Outlier estadístico (valor extremo pero técnicamente válido)"
+      },
+      {
+        "indice": 6261,
+        "columna": "Daily_Screen_Time_Hours",
+        "valor_original": 2.3,
+        "valor_contaminado": 23.5,
+        "problema": "Outlier estadístico (valor extremo pero técnicamente válido)"
+      },
+      {
+        "indice": 6392,
+        "columna": "Daily_Screen_Time_Hours",
+        "valor_original": 6.51,
+        "valor_contaminado": 23.5,
+        "problema": "Outlier estadístico (valor extremo pero técnicamente válido)"
+      },
+      {
+        "indice": 7223,
+        "columna": "Daily_Screen_Time_Hours",
+        "valor_original": 6.67,
+        "valor_contaminado": 23.5,
+        "problema": "Outlier estadístico (valor extremo pero técnicamente válido)"
+      },
+      {
+        "indice": 3275,
+        "columna": "Daily_Screen_Time_Hours",
+        "valor_original": 1.24,
+        "valor_contaminado": 23.5,
+        "problema": "Outlier estadístico (valor extremo pero técnicamente válido)"
+      },
+      {
+        "indice": 4111,
+        "columna": "Daily_Screen_Time_Hours",
+        "valor_original": 0.76,
+        "valor_contaminado": 23.24,
+        "problema": "Outlier estadístico (valor extremo pero técnicamente válido)"
+      },
+      {
+        "indice": 5947,
+        "columna": "Daily_Screen_Time_Hours",
+        "valor_original": 0.5,
+        "valor_contaminado": 23.5,
+        "problema": "Outlier estadístico (valor extremo pero técnicamente válido)"
+      },
+      {
+        "indice": 7565,
+        "columna": "Daily_Screen_Time_Hours",
+        "valor_original": 5.44,
+        "valor_contaminado": 22.94,
+        "problema": "Outlier estadístico (valor extremo pero técnicamente válido)"
+      },
+      {
+        "indice": 6077,
+        "columna": "Daily_Screen_Time_Hours",
+        "valor_original": 2.27,
+        "valor_contaminado": 23.5,
+        "problema": "Outlier estadístico (valor extremo pero técnicamente válido)"
+      },
+      {
+        "indice": 6906,
+        "columna": "Daily_Screen_Time_Hours",
+        "valor_original": 6.32,
+        "valor_contaminado": 23.5,
+        "problema": "Outlier estadístico (valor extremo pero técnicamente válido)"
+      },
+      {
+        "indice": 6763,
+        "columna": "Daily_Screen_Time_Hours",
+        "valor_original": 4.38,
+        "valor_contaminado": 22.96,
+        "problema": "Outlier estadístico (valor extremo pero técnicamente válido)"
+      },
+      {
+        "indice": 3185,
+        "columna": "Daily_Screen_Time_Hours",
+        "valor_original": 3.99,
+        "valor_contaminado": 23.31,
+        "problema": "Outlier estadístico (valor extremo pero técnicamente válido)"
+      },
+      {
+        "indice": 1076,
+        "columna": "Daily_Screen_Time_Hours",
+        "valor_original": 4.51,
+        "valor_contaminado": 23.5,
+        "problema": "Outlier estadístico (valor extremo pero técnicamente válido)"
+      },
+      {
+        "indice": 898,
+        "columna": "Daily_Screen_Time_Hours",
+        "valor_original": 4.73,
+        "valor_contaminado": 23.5,
+        "problema": "Outlier estadístico (valor extremo pero técnicamente válido)"
+      },
+      {
+        "indice": 7845,
+        "columna": "Daily_Screen_Time_Hours",
+        "valor_original": 1.3,
+        "valor_contaminado": 23.5,
+        "problema": "Outlier estadístico (valor extremo pero técnicamente válido)"
+      },
+      {
+        "indice": 883,
+        "columna": "Daily_Screen_Time_Hours",
+        "valor_original": 2.42,
+        "valor_contaminado": 23.5,
+        "problema": "Outlier estadístico (valor extremo pero técnicamente válido)"
+      },
+      {
+        "indice": 6493,
+        "columna": "Daily_Screen_Time_Hours",
+        "valor_original": 4.59,
+        "valor_contaminado": 23.5,
+        "problema": "Outlier estadístico (valor extremo pero técnicamente válido)"
+      },
+      {
+        "indice": 173,
+        "columna": "Daily_Screen_Time_Hours",
+        "valor_original": 1.24,
+        "valor_contaminado": 23.5,
+        "problema": "Outlier estadístico (valor extremo pero técnicamente válido)"
+      },
+      {
+        "indice": 1033,
+        "columna": "Daily_Screen_Time_Hours",
+        "valor_original": 6.84,
+        "valor_contaminado": 23.5,
+        "problema": "Outlier estadístico (valor extremo pero técnicamente válido)"
+      },
+      {
+        "indice": 1274,
+        "columna": "Daily_Screen_Time_Hours",
+        "valor_original": 4.3,
+        "valor_contaminado": 23.5,
+        "problema": "Outlier estadístico (valor extremo pero técnicamente válido)"
+      }
+    ]
+  },
+  "caso4_consistencia": {
+    "descripcion": "Inconsistencias entre scores y severidades",
+    "total_problemas": 800,
+    "problemas": [
+      {
+        "indice": 72,
+        "columna": "GAD_7_Severity",
+        "score": 11,
+        "severidad_correcta": "Moderate",
+        "severidad_contaminada": "Mild",
+        "problema": "Inconsistencia: Score 11 debería ser Moderate, pero es Mild"
+      },
+      {
+        "indice": 3821,
+        "columna": "GAD_7_Severity",
+        "score": 7,
+        "severidad_correcta": "Mild",
+        "severidad_contaminada": "Severe",
+        "problema": "Inconsistencia: Score 7 debería ser Mild, pero es Severe"
+      },
+      {
+        "indice": 303,
+        "columna": "GAD_7_Severity",
+        "score": 2,
+        "severidad_correcta": "Minimal",
+        "severidad_contaminada": "Mild",
+        "problema": "Inconsistencia: Score 2 debería ser Minimal, pero es Mild"
+      },
+      {
+        "indice": 7912,
+        "columna": "GAD_7_Severity",
+        "score": 9,
+        "severidad_correcta": "Mild",
+        "severidad_contaminada": "Severe",
+        "problema": "Inconsistencia: Score 9 debería ser Mild, pero es Severe"
+      },
+      {
+        "indice": 2938,
+        "columna": "GAD_7_Severity",
+        "score": 8,
+        "severidad_correcta": "Mild",
+        "severidad_contaminada": "Moderate",
+        "problema": "Inconsistencia: Score 8 debería ser Mild, pero es Moderate"
+      },
+      {
+        "indice": 3933,
+        "columna": "GAD_7_Severity",
+        "score": 6,
+        "severidad_correcta": "Mild",
+        "severidad_contaminada": "Moderate",
+        "problema": "Inconsistencia: Score 6 debería ser Mild, pero es Moderate"
+      },
+      {
+        "indice": 5224,
+        "columna": "GAD_7_Severity",
+        "score": 15,
+        "severidad_correcta": "Severe",
+        "severidad_contaminada": "Minimal",
+        "problema": "Inconsistencia: Score 15 debería ser Severe, pero es Minimal"
+      },
+      {
+        "indice": 6916,
+        "columna": "GAD_7_Severity",
+        "score": 2,
+        "severidad_correcta": "Minimal",
+        "severidad_contaminada": "Severe",
+        "problema": "Inconsistencia: Score 2 debería ser Minimal, pero es Severe"
+      },
+      {
+        "indice": 4559,
+        "columna": "GAD_7_Severity",
+        "score": 15,
+        "severidad_correcta": "Severe",
+        "severidad_contaminada": "Minimal",
+        "problema": "Inconsistencia: Score 15 debería ser Severe, pero es Minimal"
+      },
+      {
+        "indice": 1784,
+        "columna": "GAD_7_Severity",
+        "score": 3,
+        "severidad_correcta": "Minimal",
+        "severidad_contaminada": "Mild",
+        "problema": "Inconsistencia: Score 3 debería ser Minimal, pero es Mild"
+      },
+      {
+        "indice": 3347,
+        "columna": "GAD_7_Severity",
+        "score": 13,
+        "severidad_correcta": "Moderate",
+        "severidad_contaminada": "Severe",
+        "problema": "Inconsistencia: Score 13 debería ser Moderate, pero es Severe"
+      },
+      {
+        "indice": 479,
+        "columna": "GAD_7_Severity",
+        "score": 3,
+        "severidad_correcta": "Minimal",
+        "severidad_contaminada": "Mild",
+        "problema": "Inconsistencia: Score 3 debería ser Minimal, pero es Mild"
+      },
+      {
+        "indice": 4747,
+        "columna": "GAD_7_Severity",
+        "score": 4,
+        "severidad_correcta": "Minimal",
+        "severidad_contaminada": "Mild",
+        "problema": "Inconsistencia: Score 4 debería ser Minimal, pero es Mild"
+      },
+      {
+        "indice": 7690,
+        "columna": "GAD_7_Severity",
+        "score": 4,
+        "severidad_correcta": "Minimal",
+        "severidad_contaminada": "Moderate",
+        "problema": "Inconsistencia: Score 4 debería ser Minimal, pero es Moderate"
+      },
+      {
+        "indice": 651,
+        "columna": "GAD_7_Severity",
+        "score": 0,
+        "severidad_correcta": "Minimal",
+        "severidad_contaminada": "Severe",
+        "problema": "Inconsistencia: Score 0 debería ser Minimal, pero es Severe"
+      },
+      {
+        "indice": 2264,
+        "columna": "GAD_7_Severity",
+        "score": 5,
+        "severidad_correcta": "Mild",
+        "severidad_contaminada": "Minimal",
+        "problema": "Inconsistencia: Score 5 debería ser Mild, pero es Minimal"
+      },
+      {
+        "indice": 7348,
+        "columna": "GAD_7_Severity",
+        "score": 8,
+        "severidad_correcta": "Mild",
+        "severidad_contaminada": "Minimal",
+        "problema": "Inconsistencia: Score 8 debería ser Mild, pero es Minimal"
+      },
+      {
+        "indice": 4999,
+        "columna": "GAD_7_Severity",
+        "score": 0,
+        "severidad_correcta": "Minimal",
+        "severidad_contaminada": "Mild",
+        "problema": "Inconsistencia: Score 0 debería ser Minimal, pero es Mild"
+      },
+      {
+        "indice": 4517,
+        "columna": "GAD_7_Severity",
+        "score": 11,
+        "severidad_correcta": "Moderate",
+        "severidad_contaminada": "Mild",
+        "problema": "Inconsistencia: Score 11 debería ser Moderate, pero es Mild"
+      },
+      {
+        "indice": 2572,
+        "columna": "GAD_7_Severity",
+        "score": 9,
+        "severidad_correcta": "Mild",
+        "severidad_contaminada": "Severe",
+        "problema": "Inconsistencia: Score 9 debería ser Mild, pero es Severe"
+      }
+    ]
+  },
+  "caso5_valores_faltantes": {
+    "descripcion": "Valores faltantes (vacíos, N/A, NULL, etc.)",
+    "total_problemas": 798,
+    "problemas": [
+      {
+        "indice": 4752,
+        "columna": "Age",
+        "valor_original": 21,
+        "valor_faltante": "-",
+        "problema": "Valor faltante representado como: -"
+      },
+      {
+        "indice": 5350,
+        "columna": "Age",
+        "valor_original": 19,
+        "valor_faltante": "",
+        "problema": "Valor faltante representado como: "
+      },
+      {
+        "indice": 3425,
+        "columna": "Age",
+        "valor_original": 20,
+        "valor_faltante": "?",
+        "problema": "Valor faltante representado como: ?"
+      },
+      {
+        "indice": 7981,
+        "columna": "Age",
+        "valor_original": 19,
+        "valor_faltante": "?",
+        "problema": "Valor faltante representado como: ?"
+      },
+      {
+        "indice": 3426,
+        "columna": "Age",
+        "valor_original": 18,
+        "valor_faltante": "",
+        "problema": "Valor faltante representado como: "
+      },
+      {
+        "indice": 3361,
+        "columna": "Age",
+        "valor_original": 22,
+        "valor_faltante": "null",
+        "problema": "Valor faltante representado como: null"
+      },
+      {
+        "indice": 1547,
+        "columna": "Age",
+        "valor_original": 18,
+        "valor_faltante": "N/A",
+        "problema": "Valor faltante representado como: N/A"
+      },
+      {
+        "indice": 5213,
+        "columna": "Age",
+        "valor_original": 19,
+        "valor_faltante": "",
+        "problema": "Valor faltante representado como: "
+      },
+      {
+        "indice": 237,
+        "columna": "Age",
+        "valor_original": 19,
+        "valor_faltante": "na",
+        "problema": "Valor faltante representado como: na"
+      },
+      {
+        "indice": 5069,
+        "columna": "Age",
+        "valor_original": 18,
+        "valor_faltante": "N/A",
+        "problema": "Valor faltante representado como: N/A"
+      },
+      {
+        "indice": 1836,
+        "columna": "Age",
+        "valor_original": 19,
+        "valor_faltante": "-",
+        "problema": "Valor faltante representado como: -"
+      },
+      {
+        "indice": 1135,
+        "columna": "Age",
+        "valor_original": 19,
+        "valor_faltante": "?",
+        "problema": "Valor faltante representado como: ?"
+      },
+      {
+        "indice": 4994,
+        "columna": "Age",
+        "valor_original": 22,
+        "valor_faltante": "N/A",
+        "problema": "Valor faltante representado como: N/A"
+      },
+      {
+        "indice": 5078,
+        "columna": "Age",
+        "valor_original": 19,
+        "valor_faltante": "N/A",
+        "problema": "Valor faltante representado como: N/A"
+      },
+      {
+        "indice": 4123,
+        "columna": "Age",
+        "valor_original": 20,
+        "valor_faltante": "N/A",
+        "problema": "Valor faltante representado como: N/A"
+      },
+      {
+        "indice": 659,
+        "columna": "Age",
+        "valor_original": 18,
+        "valor_faltante": "NULL",
+        "problema": "Valor faltante representado como: NULL"
+      },
+      {
+        "indice": 4911,
+        "columna": "Age",
+        "valor_original": 19,
+        "valor_faltante": "null",
+        "problema": "Valor faltante representado como: null"
+      },
+      {
+        "indice": 4674,
+        "columna": "Age",
+        "valor_original": 20,
+        "valor_faltante": "N/A",
+        "problema": "Valor faltante representado como: N/A"
+      },
+      {
+        "indice": 5997,
+        "columna": "Age",
+        "valor_original": 19,
+        "valor_faltante": "NULL",
+        "problema": "Valor faltante representado como: NULL"
+      },
+      {
+        "indice": 3348,
+        "columna": "Age",
+        "valor_original": 21,
+        "valor_faltante": "na",
+        "problema": "Valor faltante representado como: na"
+      }
+    ]
+  },
+  "caso6_tipos_datos": {
+    "descripcion": "Valores numéricos representados como texto",
+    "total_problemas": 798,
+    "problemas": [
+      {
+        "indice": 1055,
+        "columna": "Age",
+        "valor_original": 18,
+        "valor_texto": "twenty-one",
+        "problema": "Valor numérico representado como texto: twenty-one"
+      },
+      {
+        "indice": 5430,
+        "columna": "Age",
+        "valor_original": 20,
+        "valor_texto": "eighteen",
+        "problema": "Valor numérico representado como texto: eighteen"
+      },
+      {
+        "indice": 5648,
+        "columna": "Age",
+        "valor_original": 21,
+        "valor_texto": "dieciocho",
+        "problema": "Valor numérico representado como texto: dieciocho"
+      },
+      {
+        "indice": 1826,
+        "columna": "Age",
+        "valor_original": 20,
+        "valor_texto": "eighteen",
+        "problema": "Valor numérico representado como texto: eighteen"
+      },
+      {
+        "indice": 577,
+        "columna": "Age",
+        "valor_original": 19,
+        "valor_texto": "dieciocho",
+        "problema": "Valor numérico representado como texto: dieciocho"
+      },
+      {
+        "indice": 5223,
+        "columna": "Age",
+        "valor_original": 19,
+        "valor_texto": "veinte",
+        "problema": "Valor numérico representado como texto: veinte"
+      },
+      {
+        "indice": 937,
+        "columna": "Age",
+        "valor_original": 18,
+        "valor_texto": "twenty",
+        "problema": "Valor numérico representado como texto: twenty"
+      },
+      {
+        "indice": 944,
+        "columna": "Age",
+        "valor_original": 18,
+        "valor_texto": "twenty",
+        "problema": "Valor numérico representado como texto: twenty"
+      },
+      {
+        "indice": 1301,
+        "columna": "Age",
+        "valor_original": 21,
+        "valor_texto": "veintiuno",
+        "problema": "Valor numérico representado como texto: veintiuno"
+      },
+      {
+        "indice": 7390,
+        "columna": "Age",
+        "valor_original": 19,
+        "valor_texto": "twenty",
+        "problema": "Valor numérico representado como texto: twenty"
+      },
+      {
+        "indice": 6481,
+        "columna": "Age",
+        "valor_original": 20,
+        "valor_texto": "veinte",
+        "problema": "Valor numérico representado como texto: veinte"
+      },
+      {
+        "indice": 4002,
+        "columna": "Age",
+        "valor_original": 19,
+        "valor_texto": "veinte",
+        "problema": "Valor numérico representado como texto: veinte"
+      },
+      {
+        "indice": 544,
+        "columna": "Age",
+        "valor_original": 19,
+        "valor_texto": "twenty",
+        "problema": "Valor numérico representado como texto: twenty"
+      },
+      {
+        "indice": 1502,
+        "columna": "Age",
+        "valor_original": 19,
+        "valor_texto": "veintiuno",
+        "problema": "Valor numérico representado como texto: veintiuno"
+      },
+      {
+        "indice": 4398,
+        "columna": "Age",
+        "valor_original": 20,
+        "valor_texto": "dieciocho",
+        "problema": "Valor numérico representado como texto: dieciocho"
+      },
+      {
+        "indice": 2681,
+        "columna": "Age",
+        "valor_original": 20,
+        "valor_texto": "dieciocho",
+        "problema": "Valor numérico representado como texto: dieciocho"
+      },
+      {
+        "indice": 1371,
+        "columna": "Age",
+        "valor_original": 20,
+        "valor_texto": "twenty-one",
+        "problema": "Valor numérico representado como texto: twenty-one"
+      },
+      {
+        "indice": 7729,
+        "columna": "Age",
+        "valor_original": 20,
+        "valor_texto": "dieciocho",
+        "problema": "Valor numérico representado como texto: dieciocho"
+      },
+      {
+        "indice": 6062,
+        "columna": "Age",
+        "valor_original": 0,
+        "valor_texto": "eighteen",
+        "problema": "Valor numérico representado como texto: eighteen"
+      },
+      {
+        "indice": 2101,
+        "columna": "Age",
+        "valor_original": 18,
+        "valor_texto": "twenty",
+        "problema": "Valor numérico representado como texto: twenty"
+      }
+    ]
+  },
+  "caso7_formato": {
+    "descripcion": "Problemas de formato (espacios extra, caracteres especiales)",
+    "total_problemas": 800,
+    "problemas": [
+      {
+        "indice": 3921,
+        "columna": "User_ID",
+        "valor_original": "U-64fa4596",
+        "valor_contaminado": "U -64fa4596",
+        "problema": "Espacios extra en formato"
+      },
+      {
+        "indice": 1754,
+        "columna": "User_ID",
+        "valor_original": "U-89dc1fd4",
+        "valor_contaminado": " U-89dc1fd4 ",
+        "problema": "Espacios extra en formato"
+      },
+      {
+        "indice": 811,
+        "columna": "User_ID",
+        "valor_original": "U-84e42f35",
+        "valor_contaminado": "U-84e42f35 ",
+        "problema": "Espacios extra en formato"
+      },
+      {
+        "indice": 1412,
+        "columna": "User_ID",
+        "valor_original": "U-3eb35347",
+        "valor_contaminado": " U-3eb35347",
+        "problema": "Espacios extra en formato"
+      },
+      {
+        "indice": 3177,
+        "columna": "User_ID",
+        "valor_original": "U-7e73b8f1",
+        "valor_contaminado": " U-7e73b8f1",
+        "problema": "Espacios extra en formato"
+      },
+      {
+        "indice": 4530,
+        "columna": "User_ID",
+        "valor_original": "U-3a5e8927",
+        "valor_contaminado": "U-3a5e8927 ",
+        "problema": "Espacios extra en formato"
+      },
+      {
+        "indice": 5188,
+        "columna": "User_ID",
+        "valor_original": "U-2cf6b8e4",
+        "valor_contaminado": " U-2cf6b8e4",
+        "problema": "Espacios extra en formato"
+      },
+      {
+        "indice": 5136,
+        "columna": "User_ID",
+        "valor_original": "U-80df8228",
+        "valor_contaminado": " U-80df8228 ",
+        "problema": "Espacios extra en formato"
+      },
+      {
+        "indice": 4435,
+        "columna": "User_ID",
+        "valor_original": "U-af727f59",
+        "valor_contaminado": "U - af727f59",
+        "problema": "Espacios extra en formato"
+      },
+      {
+        "indice": 7034,
+        "columna": "User_ID",
+        "valor_original": "U-355d6fab",
+        "valor_contaminado": " U-355d6fab",
+        "problema": "Espacios extra en formato"
+      },
+      {
+        "indice": 6585,
+        "columna": "User_ID",
+        "valor_original": "U-eac55301",
+        "valor_contaminado": "U-eac55301 ",
+        "problema": "Espacios extra en formato"
+      },
+      {
+        "indice": 580,
+        "columna": "User_ID",
+        "valor_original": "U-1b12410a",
+        "valor_contaminado": "U - 1b12410a",
+        "problema": "Espacios extra en formato"
+      },
+      {
+        "indice": 1196,
+        "columna": "User_ID",
+        "valor_original": "U-a10be53b",
+        "valor_contaminado": "U-a10be53b ",
+        "problema": "Espacios extra en formato"
+      },
+      {
+        "indice": 5464,
+        "columna": "User_ID",
+        "valor_original": "U-46034eff",
+        "valor_contaminado": "U - 46034eff",
+        "problema": "Espacios extra en formato"
+      },
+      {
+        "indice": 1040,
+        "columna": "User_ID",
+        "valor_original": "U-ac8312e8",
+        "valor_contaminado": " U-ac8312e8",
+        "problema": "Espacios extra en formato"
+      },
+      {
+        "indice": 7027,
+        "columna": "User_ID",
+        "valor_original": "U-4be36111",
+        "valor_contaminado": " U-4be36111",
+        "problema": "Espacios extra en formato"
+      },
+      {
+        "indice": 4176,
+        "columna": "User_ID",
+        "valor_original": "U-042120c6",
+        "valor_contaminado": "U - 042120c6",
+        "problema": "Espacios extra en formato"
+      },
+      {
+        "indice": 1191,
+        "columna": "User_ID",
+        "valor_original": "U-85b4f7f0",
+        "valor_contaminado": " U-85b4f7f0 ",
+        "problema": "Espacios extra en formato"
+      },
+      {
+        "indice": 7054,
+        "columna": "User_ID",
+        "valor_original": "U-756bbb18",
+        "valor_contaminado": "U -756bbb18",
+        "problema": "Espacios extra en formato"
+      },
+      {
+        "indice": 6230,
+        "columna": "User_ID",
+        "valor_original": "U-c0f0a233",
+        "valor_contaminado": " U-c0f0a233 ",
+        "problema": "Espacios extra en formato"
+      }
+    ]
+  }
+}
