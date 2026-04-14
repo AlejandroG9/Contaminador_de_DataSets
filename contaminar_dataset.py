@@ -30,25 +30,73 @@ class ContaminadorDataset:
     Diseñada para ser reutilizable con otros datasets.
     """
     
-    def __init__(self, archivo_entrada: str, archivo_salida: str, porcentaje_contaminacion: float = 0.10):
+    def __init__(self, archivo_entrada: str, archivo_salida: str,
+                 porcentaje_contaminacion: float = 0.10, encoding: str = 'utf-8'):
         """
         Inicializa el contaminador de dataset.
-        
+
         Args:
             archivo_entrada: Ruta al archivo CSV original (limpio)
             archivo_salida: Ruta donde se guardará el CSV contaminado
             porcentaje_contaminacion: Porcentaje de registros a contaminar por caso (0.10 = 10%)
+            encoding: Encoding del CSV (default utf-8; usar latin-1 si hay problemas)
         """
         self.archivo_entrada = archivo_entrada
         self.archivo_salida = archivo_salida
         self.porcentaje_contaminacion = porcentaje_contaminacion
+        self.encoding = encoding
         self.df = None
         self.reporte_problemas = {}
+        self.columnas_detectadas = {}
         
     def cargar_dataset(self):
         """Carga el dataset original desde el archivo CSV."""
-        self.df = pd.read_csv(self.archivo_entrada)
+        self.df = pd.read_csv(self.archivo_entrada, encoding=self.encoding)
         print(f"Dataset cargado: {len(self.df)} registros, {len(self.df.columns)} columnas")
+        self._detectar_columnas()
+
+    def _detectar_columnas(self):
+        """Clasifica las columnas del dataset en 5 grupos por tipo."""
+        cols_ids = []
+        cols_categoricas = []
+        cols_binarias = []
+        cols_horas = []
+        cols_numericas = []
+
+        n = len(self.df)
+        keywords_horas = ['hour', 'hora', 'time']
+
+        for col in self.df.columns:
+            col_lower = col.lower()
+            dtype = self.df[col].dtype
+
+            if dtype == 'object':
+                unique_ratio = self.df[col].nunique() / n
+                if unique_ratio > 0.8:
+                    cols_ids.append(col)
+                else:
+                    cols_categoricas.append(col)
+            elif np.issubdtype(dtype, np.number):
+                unique_vals = set(self.df[col].dropna().unique())
+                if unique_vals <= {0, 1}:
+                    cols_binarias.append(col)
+                elif any(kw in col_lower for kw in keywords_horas):
+                    cols_horas.append(col)
+                else:
+                    cols_numericas.append(col)
+
+        self.columnas_detectadas = {
+            'cols_ids': cols_ids,
+            'cols_categoricas': cols_categoricas,
+            'cols_binarias': cols_binarias,
+            'cols_horas': cols_horas,
+            'cols_numericas': cols_numericas,
+        }
+
+        print(f"\nColumnas detectadas:")
+        for grupo, cols in self.columnas_detectadas.items():
+            if cols:
+                print(f"  {grupo}: {cols}")
         
     def guardar_dataset(self):
         """Guarda el dataset contaminado en un nuevo archivo CSV."""
@@ -105,19 +153,19 @@ class ContaminadorDataset:
         
         # Aplicar los casos de contaminación desde los módulos separados
         if 'caso1' in casos_activados:
-            aplicar_caso1(self.df, self.porcentaje_contaminacion, self.reporte_problemas)
+            aplicar_caso1(self.df, self.porcentaje_contaminacion, self.reporte_problemas, self.columnas_detectadas)
         if 'caso2' in casos_activados:
-            aplicar_caso2(self.df, self.porcentaje_contaminacion, self.reporte_problemas)
+            aplicar_caso2(self.df, self.porcentaje_contaminacion, self.reporte_problemas, self.columnas_detectadas)
         if 'caso3' in casos_activados:
-            aplicar_caso3(self.df, self.porcentaje_contaminacion, self.reporte_problemas)
+            aplicar_caso3(self.df, self.porcentaje_contaminacion, self.reporte_problemas, self.columnas_detectadas)
         if 'caso4' in casos_activados:
-            aplicar_caso4(self.df, self.porcentaje_contaminacion, self.reporte_problemas)
+            aplicar_caso4(self.df, self.porcentaje_contaminacion, self.reporte_problemas, self.columnas_detectadas)
         if 'caso5' in casos_activados:
-            aplicar_caso5(self.df, self.porcentaje_contaminacion, self.reporte_problemas)
+            aplicar_caso5(self.df, self.porcentaje_contaminacion, self.reporte_problemas, self.columnas_detectadas)
         if 'caso6' in casos_activados:
-            aplicar_caso6(self.df, self.porcentaje_contaminacion, self.reporte_problemas)
+            aplicar_caso6(self.df, self.porcentaje_contaminacion, self.reporte_problemas, self.columnas_detectadas)
         if 'caso7' in casos_activados:
-            aplicar_caso7(self.df, self.porcentaje_contaminacion, self.reporte_problemas)
+            aplicar_caso7(self.df, self.porcentaje_contaminacion, self.reporte_problemas, self.columnas_detectadas)
         
         print("\n" + "=" * 70)
         print("CONTAMINACIÓN COMPLETADA")
@@ -134,37 +182,55 @@ class ContaminadorDataset:
 # ============================================================================
 
 def main():
-    """Función principal para ejecutar el script."""
-    
-    # Configuración
-    archivo_entrada = 'social_media_mental_health.csv'
-    archivo_salida = 'social_media_mental_health_contaminado.csv'
-    porcentaje_contaminacion = 0.10  # 10% de los registros por caso
-    
-    # Crear instancia del contaminador
-    contaminador = ContaminadorDataset(
-        archivo_entrada=archivo_entrada,
-        archivo_salida=archivo_salida,
-        porcentaje_contaminacion=porcentaje_contaminacion
+    """Punto de entrada CLI del script."""
+    import argparse
+
+    parser = argparse.ArgumentParser(
+        description='Contamina intencionalmente un dataset CSV con 7 tipos de problemas de calidad de datos.'
     )
-    
-    # Cargar dataset
-    contaminador.cargar_dataset()
-    
-    # Ejecutar todos los casos de contaminación
-    # Para ejecutar solo algunos casos, pasar: casos_activados=['caso1', 'caso2']
-    contaminador.contaminar_dataset()
-    
-    # Guardar dataset contaminado
-    contaminador.guardar_dataset()
-    
-    # Generar reporte
-    contaminador.generar_reporte()
-    
-    print("\n✓ Proceso completado exitosamente!")
-    print(f"  - Dataset original: {archivo_entrada}")
-    print(f"  - Dataset contaminado: {archivo_salida}")
-    print(f"  - Reporte de problemas: {archivo_salida.replace('.csv', '_reporte.json')}")
+    parser.add_argument('archivo', help='Ruta al archivo CSV de entrada')
+    parser.add_argument('--salida', default=None,
+                        help='Ruta del CSV contaminado (default: <nombre>_contaminado.csv)')
+    parser.add_argument('--porcentaje', type=float, default=0.10,
+                        help='Porcentaje de registros a contaminar por caso (default: 0.10)')
+    parser.add_argument('--casos', type=int, nargs='+', default=list(range(1, 8)),
+                        choices=range(1, 8), metavar='N',
+                        help='Casos a aplicar, p.ej. --casos 1 3 5 (default: todos)')
+    parser.add_argument('--encoding', default='utf-8',
+                        help='Encoding del CSV (default: utf-8). Usa latin-1 si hay problemas.')
+
+    args = parser.parse_args()
+
+    if args.salida is None:
+        base = args.archivo.rsplit('.', 1)[0]
+        args.salida = f"{base}_contaminado.csv"
+
+    casos_activados = [f'caso{n}' for n in args.casos]
+
+    try:
+        contaminador = ContaminadorDataset(
+            archivo_entrada=args.archivo,
+            archivo_salida=args.salida,
+            porcentaje_contaminacion=args.porcentaje,
+            encoding=args.encoding,
+        )
+        contaminador.cargar_dataset()
+        contaminador.contaminar_dataset(casos_activados=casos_activados)
+        contaminador.guardar_dataset()
+        contaminador.generar_reporte()
+
+        print("\n✓ Proceso completado exitosamente!")
+        print(f"  - Dataset original:    {args.archivo}")
+        print(f"  - Dataset contaminado: {args.salida}")
+        print(f"  - Reporte:             {args.salida.replace('.csv', '_reporte.json')}")
+
+    except UnicodeDecodeError:
+        print(f"\nError al leer el archivo: encoding incorrecto.")
+        print(f"Prueba con --encoding latin-1")
+        raise SystemExit(1)
+    except FileNotFoundError:
+        print(f"\nError: no se encontró el archivo '{args.archivo}'")
+        raise SystemExit(1)
 
 
 if __name__ == '__main__':

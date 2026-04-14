@@ -1,170 +1,218 @@
-# Script de Contaminación de Datos
+# Contaminador de Datos
 
-## Propósito
+Herramienta educativa para la materia de **Ingeniería de la Información**. Introduce intencionalmente 7 tipos de problemas de calidad de datos en cualquier CSV, para que los alumnos los identifiquen y corrijan.
 
-Este script está diseñado para **propósitos educativos** en la materia de Ingeniería de la Información. Introduce intencionalmente problemas de calidad de datos en un dataset limpio para poder ejemplificar durante las clases cómo identificar y resolver cada tipo de problema.
+---
 
-## Los 7 Casos de Uso para Limpieza
-
-El script introduce los siguientes tipos de problemas:
-
-### Caso 1: Normalización de Categorías
-- **Problema**: Variaciones en mayúsculas/minúsculas, espacios extra, variaciones en guiones
-- **Ejemplos**: `"male"`, `"MALE"`, `" Male "`, `"hyper-connected"` vs `"Hyper-Connected"`
-- **Columnas afectadas**: Gender, User_Archetype, Primary_Platform, Dominant_Content_Type, Activity_Type, GAD_7_Severity, PHQ_9_Severity
-
-### Caso 2: Validación de Rangos Numéricos
-- **Problema**: Valores fuera de rangos lógicos o válidos
-- **Ejemplos**: `Age = 100`, `Daily_Screen_Time_Hours = 30`, `GAD_7_Score = 25`
-- **Columnas afectadas**: Age, Daily_Screen_Time_Hours, GAD_7_Score, PHQ_9_Score
-
-### Caso 3: Detección de Outliers
-- **Problema**: Valores estadísticamente extremos pero técnicamente válidos
-- **Ejemplos**: `Daily_Screen_Time_Hours = 23.5`, `Sleep_Duration_Hours = 11.8`
-- **Columnas afectadas**: Daily_Screen_Time_Hours, Sleep_Duration_Hours
-
-### Caso 4: Validación de Consistencia entre Columnas
-- **Problema**: Inconsistencias entre columnas relacionadas
-- **Ejemplos**: `GAD_7_Score = 15` pero `GAD_7_Severity = "Mild"` (debería ser "Severe")
-- **Columnas afectadas**: GAD_7_Score ↔ GAD_7_Severity, PHQ_9_Score ↔ PHQ_9_Severity
-
-### Caso 5: Manejo de Valores Faltantes
-- **Problema**: Celdas vacías, nulos, o valores como "N/A", "NULL", etc.
-- **Ejemplos**: `Age = ""`, `Gender = "N/A"`, `Daily_Screen_Time_Hours = "NULL"`
-- **Columnas afectadas**: Todas las columnas principales
-
-### Caso 6: Normalización de Tipos de Datos
-- **Problema**: Valores que deberían ser numéricos pero están como texto
-- **Ejemplos**: `Age = "dieciocho"`, `GAD_7_Score = "nueve"`, `Late_Night_Usage = "sí"`
-- **Columnas afectadas**: Age, Daily_Screen_Time_Hours, Sleep_Duration_Hours, GAD_7_Score, PHQ_9_Score, Late_Night_Usage, Social_Comparison_Trigger
-
-### Caso 7: Limpieza de Formato
-- **Problema**: Espacios extra, caracteres especiales, formato inconsistente
-- **Ejemplos**: `User_ID = " U-b23639d2 "`, `Primary_Platform = "*Facebook*"`
-- **Columnas afectadas**: User_ID, Primary_Platform, Gender
-
-## Uso del Script
-
-### Requisitos
+## Requisitos
 
 ```bash
 pip install pandas numpy
 ```
 
-### Uso Básico
+---
+
+## Uso por línea de comandos (CLI)
+
+### Uso mínimo
 
 ```bash
-python3 contaminar_dataset.py
+python3 contaminar_dataset.py mi_dataset.csv
 ```
 
-Esto ejecutará todos los 7 casos de contaminación sobre el archivo `social_media_mental_health.csv` y generará:
-- `social_media_mental_health_contaminado.csv`: Dataset con problemas introducidos
-- `social_media_mental_health_contaminado_reporte.json`: Reporte detallado de los problemas
+Genera automáticamente:
+- `mi_dataset_contaminado.csv` — dataset con problemas introducidos
+- `mi_dataset_contaminado_reporte.json` — detalle de cada problema
 
-### Configuración
+### Opciones disponibles
 
-Puedes modificar el script para cambiar:
+```bash
+python3 contaminar_dataset.py mi_dataset.csv [opciones]
+```
 
-1. **Porcentaje de contaminación**: Por defecto es 10% por caso
-   ```python
-   porcentaje_contaminacion = 0.10  # Cambiar a 0.05 para 5%, 0.15 para 15%, etc.
-   ```
+| Opción | Descripción | Default |
+|--------|-------------|---------|
+| `--salida archivo.csv` | Ruta del archivo de salida | `<nombre>_contaminado.csv` |
+| `--porcentaje 0.15` | Fracción de registros a contaminar por caso | `0.10` (10%) |
+| `--casos 1 3 5` | Qué casos aplicar (1 al 7) | Todos |
+| `--encoding latin-1` | Encoding del CSV | `utf-8` |
 
-2. **Archivos de entrada/salida**:
-   ```python
-   archivo_entrada = 'social_media_mental_health.csv'
-   archivo_salida = 'social_media_mental_health_contaminado.csv'
-   ```
+### Ejemplos
 
-3. **Casos específicos**: Para ejecutar solo algunos casos, modifica la función `main()`:
-   ```python
-   contaminador.contaminar_dataset(casos_activados=['caso1', 'caso2', 'caso5'])
-   ```
+```bash
+# Contaminar con todos los casos al 10%
+python3 contaminar_dataset.py datos_alumnos.csv
 
-### Uso Programático
+# Solo casos 1, 3 y 5 con 15% de contaminación
+python3 contaminar_dataset.py ventas.csv --casos 1 3 5 --porcentaje 0.15
+
+# Especificar archivo de salida
+python3 contaminar_dataset.py encuesta.csv --salida encuesta_ejercicio.csv
+
+# CSV con encoding especial (archivos de Excel en español)
+python3 contaminar_dataset.py reporte.csv --encoding latin-1
+```
+
+---
+
+## Detección automática de columnas
+
+El script analiza el dataset al cargarlo y clasifica las columnas automáticamente:
+
+| Grupo | Criterio | Ejemplos |
+|-------|----------|---------|
+| **IDs** | Texto con >80% valores únicos | `user_id`, `transaction_id` |
+| **Categóricas** | Texto con valores repetidos | `gender`, `stress_level` |
+| **Binarias** | Numéricas con solo valores 0 y 1 | `addicted_label` |
+| **Horas** | Numéricas cuyo nombre contiene "hour/hora/time" | `sleep_hours`, `screen_time` |
+| **Numéricas** | Resto de columnas numéricas | `age`, `score` |
+
+No es necesario configurar nada: el script aplica cada caso al grupo de columnas que corresponde.
+
+---
+
+## Los 7 casos de contaminación
+
+### Caso 1 — Normalización de Categorías
+Introduce variaciones de mayúsculas, espacios y guiones en columnas categóricas.
+
+| Valor original | Variación introducida |
+|---------------|----------------------|
+| `Male` | `MALE`, `male`, ` Male`, `Male ` |
+| `High` | `HIGH`, `high`, ` High ` |
+
+**Columnas afectadas:** todas las categóricas detectadas.
+
+---
+
+### Caso 2 — Validación de Rangos Numéricos
+Introduce valores fuera del rango lógico de cada columna.
+
+| Tipo de columna | Valores fuera de rango |
+|-----------------|------------------------|
+| Horas (`*hours*`, `*time*`) | `-5`, `25`, `30.5`, `48` |
+| Edad (`*age*`, `*edad*`) | `0`, `5`, `150`, `200` |
+| Resto de numéricas | Negativos o 10× el máximo |
+
+**Columnas afectadas:** horas y numéricas (excluye binarias).
+
+---
+
+### Caso 3 — Detección de Outliers
+Introduce valores estadísticamente extremos (> 3.5 desviaciones estándar) pero dentro del rango físicamente posible.
+
+**Columnas afectadas:** horas y numéricas con al menos 5 valores únicos.
+
+---
+
+### Caso 4 — Consistencia entre Columnas
+Detecta automáticamente pares de columnas relacionadas (prefijo común de ≥2 palabras) e introduce inconsistencias entre ellas.
+
+| Ejemplo de par detectado | Inconsistencia |
+|--------------------------|---------------|
+| `gad_7_score` / `gad_7_severity` | Score alto con severidad baja |
+| `phq_9_score` / `phq_9_severity` | Score bajo con severidad alta |
+
+Si no se detectan pares, este caso se omite sin error.
+
+---
+
+### Caso 5 — Valores Faltantes
+Introduce representaciones de nulos en todas las columnas (excepto IDs).
+
+Valores usados: `""`, `"N/A"`, `"NULL"`, `"NaN"`, `"null"`, `"na"`, `"?"`, `"-"`
+
+---
+
+### Caso 6 — Tipos de Datos
+Reemplaza valores numéricos con su equivalente en texto (español e inglés).
+
+| Valor original | Valor contaminado |
+|---------------|------------------|
+| `20` | `"veinte"`, `"twenty"` |
+| `7.5` | `"cinco punto tres"`, `"N/D"` |
+
+**Columnas afectadas:** horas y numéricas (excluye binarias).
+
+---
+
+### Caso 7 — Limpieza de Formato
+Introduce espacios, tabs y caracteres especiales en columnas de texto.
+
+| Valor original | Variación introducida |
+|---------------|----------------------|
+| `Male` | `" Male"`, `"Male\t"`, `"[Male]"` |
+| `U00001` | `" U00001 "`, `"*U00001*"` |
+
+**Columnas afectadas:** IDs y categóricas.
+
+---
+
+## Uso como módulo Python
 
 ```python
 from contaminar_dataset import ContaminadorDataset
 
-# Crear instancia
 contaminador = ContaminadorDataset(
     archivo_entrada='mi_dataset.csv',
     archivo_salida='mi_dataset_contaminado.csv',
     porcentaje_contaminacion=0.10
 )
 
-# Cargar dataset
 contaminador.cargar_dataset()
-
-# Ejecutar casos específicos
-contaminador.contaminar_dataset(casos_activados=['caso1', 'caso3', 'caso5'])
-
-# Guardar resultados
+contaminador.contaminar_dataset()              # Todos los casos
+# contaminador.contaminar_dataset(casos_activados=['caso1', 'caso3', 'caso5'])
 contaminador.guardar_dataset()
-contaminador.generar_reporte('mi_reporte.json')
+contaminador.generar_reporte()
 ```
 
-## Reutilización con Otros Datasets
+---
 
-El script está diseñado para ser reutilizable. Para adaptarlo a otro dataset:
-
-1. **Identifica las columnas categóricas** y modifica `caso1_normalizacion_categorias()`:
-   ```python
-   configuracion = {
-       'Tu_Columna_Categorica': {
-           'variaciones': ['variacion1', 'variacion2', ...],
-           'descripcion': 'Descripción del problema'
-       }
-   }
-   ```
-
-2. **Identifica las columnas numéricas** y modifica `caso2_validacion_rangos_numericos()`:
-   - Define los rangos válidos para cada columna
-   - Genera valores fuera de esos rangos
-
-3. **Identifica relaciones entre columnas** y modifica `caso4_validacion_consistencia_columnas()`:
-   - Define las reglas de consistencia
-   - Introduce inconsistencias intencionales
-
-4. **Ajusta los demás casos** según las características de tu dataset
-
-## Estructura del Reporte JSON
-
-El reporte generado contiene información detallada sobre cada problema introducido:
+## Estructura del reporte JSON
 
 ```json
 {
   "caso1_normalizacion_categorias": {
-    "descripcion": "Problemas de normalización en categorías...",
-    "total_problemas": 5600,
+    "descripcion": "Problemas de normalización en categorías",
+    "columnas_afectadas": ["gender", "stress_level"],
+    "total_problemas": 3000,
     "problemas": [
       {
-        "indice": 123,
-        "columna": "Gender",
+        "indice": 42,
+        "columna": "gender",
         "valor_original": "Male",
-        "valor_contaminado": "male"
+        "valor_contaminado": "MALE"
       }
     ]
   },
-  ...
+  "caso4_consistencia": {
+    "descripcion": "Inconsistencias entre columnas relacionadas",
+    "pares_detectados": ["gad_7_score / gad_7_severity"],
+    "total_problemas": 800,
+    "problemas": [...]
+  }
 }
 ```
 
-## Notas Importantes
+---
 
-1. **El dataset original NO se modifica**: El script siempre crea un nuevo archivo
-2. **Reproducibilidad**: El script usa semillas aleatorias (`random.seed(42)`) para resultados consistentes
-3. **Warnings de pandas**: Los warnings sobre tipos incompatibles son **esperados** ya que estamos introduciendo problemas intencionalmente
-4. **Sobrescritura**: Si ejecutas el script múltiples veces, sobrescribirá los archivos de salida
+## Notas para el docente
 
-## Ejemplo de Uso en Clase
+- **El dataset original no se modifica** — siempre se crea un nuevo archivo.
+- **Reproducibilidad** — se usa `random.seed(42)` para que el resultado sea igual en cada ejecución.
+- **El caso 4 es automático** — detecta pares de columnas relacionadas por nombre. Funciona con datasets que tengan columnas como `score`/`severity`, `nivel`/`categoria`, etc.
+- **Datasets sin pares relacionados** — el caso 4 reporta 0 problemas y continúa sin error.
 
-1. **Mostrar el dataset original** (limpio)
-2. **Ejecutar el script** para generar el dataset contaminado
-3. **Mostrar ejemplos de cada tipo de problema** usando el reporte JSON
-4. **Ejercitar la limpieza** de cada caso de uso
-5. **Comparar** el dataset original con el limpio después de la limpieza
+---
 
-## Autor
+## Flujo sugerido en clase
 
-Script educativo para Ingeniería de la Información - 2024
+1. Mostrar el dataset original (limpio).
+2. Ejecutar el script para generar el dataset contaminado.
+3. Usar el reporte JSON para mostrar exactamente qué se contaminó en cada caso.
+4. Pedir a los alumnos que identifiquen y corrijan cada tipo de problema.
+5. Comparar el dataset limpiado con el original usando el reporte.
+
+---
+
+*Script educativo para Ingeniería de la Información.*
