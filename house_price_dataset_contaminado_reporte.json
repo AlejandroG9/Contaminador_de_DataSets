@@ -1,0 +1,907 @@
+{
+  "caso1_normalizacion_categorias": {
+    "descripcion": "Problemas de normalización en categorías (mayúsculas, espacios, guiones)",
+    "columnas_afectadas": [
+      "property_type",
+      "location",
+      "city",
+      "purpose"
+    ],
+    "total_problemas": 39796,
+    "problemas": [
+      {
+        "indice": 83810,
+        "columna": "property_type",
+        "valor_original": "Flat",
+        "valor_contaminado": "Room "
+      },
+      {
+        "indice": 14592,
+        "columna": "property_type",
+        "valor_original": "House",
+        "valor_contaminado": " Room "
+      },
+      {
+        "indice": 3278,
+        "columna": "property_type",
+        "valor_original": "Upper Portion",
+        "valor_contaminado": " House"
+      },
+      {
+        "indice": 97196,
+        "columna": "property_type",
+        "valor_original": "Upper Portion",
+        "valor_contaminado": "house"
+      },
+      {
+        "indice": 36048,
+        "columna": "property_type",
+        "valor_original": "House",
+        "valor_contaminado": "house"
+      },
+      {
+        "indice": 32098,
+        "columna": "property_type",
+        "valor_original": "House",
+        "valor_contaminado": " Flat"
+      },
+      {
+        "indice": 29256,
+        "columna": "property_type",
+        "valor_original": "House",
+        "valor_contaminado": " Farm House"
+      },
+      {
+        "indice": 18289,
+        "columna": "property_type",
+        "valor_original": "House",
+        "valor_contaminado": "house"
+      },
+      {
+        "indice": 96530,
+        "columna": "property_type",
+        "valor_original": "House",
+        "valor_contaminado": "PENTHOUSE"
+      },
+      {
+        "indice": 13434,
+        "columna": "property_type",
+        "valor_original": "House",
+        "valor_contaminado": " House"
+      },
+      {
+        "indice": 88696,
+        "columna": "property_type",
+        "valor_original": "House",
+        "valor_contaminado": "Penthouse "
+      },
+      {
+        "indice": 97080,
+        "columna": "property_type",
+        "valor_original": "House",
+        "valor_contaminado": "Upper Portion "
+      },
+      {
+        "indice": 71482,
+        "columna": "property_type",
+        "valor_original": "House",
+        "valor_contaminado": "PENTHOUSE"
+      },
+      {
+        "indice": 11395,
+        "columna": "property_type",
+        "valor_original": "Flat",
+        "valor_contaminado": "Lower Portion "
+      },
+      {
+        "indice": 77397,
+        "columna": "property_type",
+        "valor_original": "House",
+        "valor_contaminado": "Room "
+      },
+      {
+        "indice": 55302,
+        "columna": "property_type",
+        "valor_original": "House",
+        "valor_contaminado": " Farm House"
+      },
+      {
+        "indice": 4165,
+        "columna": "property_type",
+        "valor_original": "Flat",
+        "valor_contaminado": "farm house"
+      },
+      {
+        "indice": 3905,
+        "columna": "property_type",
+        "valor_original": "House",
+        "valor_contaminado": "house"
+      },
+      {
+        "indice": 12280,
+        "columna": "property_type",
+        "valor_original": "Flat",
+        "valor_contaminado": " House "
+      },
+      {
+        "indice": 28657,
+        "columna": "property_type",
+        "valor_original": "House",
+        "valor_contaminado": "Upper Portion "
+      }
+    ]
+  },
+  "caso2_validacion_rangos": {
+    "descripcion": "Valores numéricos fuera de rangos válidos o lógicos",
+    "columnas_afectadas": [
+      "Unnamed: 0",
+      "price",
+      "baths",
+      "bedrooms",
+      "Area_in_Marla"
+    ],
+    "total_problemas": 49745,
+    "problemas": [
+      {
+        "indice": 1565,
+        "columna": "Unnamed: 0",
+        "valor_original": 2350.0,
+        "valor_contaminado": 1684450,
+        "problema": "Valor fuera de rango en Unnamed: 0"
+      },
+      {
+        "indice": 98568,
+        "columna": "Unnamed: 0",
+        "valor_original": 166640.0,
+        "valor_contaminado": -84222.5,
+        "problema": "Valor fuera de rango en Unnamed: 0"
+      },
+      {
+        "indice": 510,
+        "columna": "Unnamed: 0",
+        "valor_original": 788.0,
+        "valor_contaminado": 1684450,
+        "problema": "Valor fuera de rango en Unnamed: 0"
+      },
+      {
+        "indice": 14235,
+        "columna": "Unnamed: 0",
+        "valor_original": 20552.0,
+        "valor_contaminado": -84222.5,
+        "problema": "Valor fuera de rango en Unnamed: 0"
+      },
+      {
+        "indice": 11766,
+        "columna": "Unnamed: 0",
+        "valor_original": 17152.0,
+        "valor_contaminado": 1684450,
+        "problema": "Valor fuera de rango en Unnamed: 0"
+      },
+      {
+        "indice": 17833,
+        "columna": "Unnamed: 0",
+        "valor_original": 25686.0,
+        "valor_contaminado": 1684450,
+        "problema": "Valor fuera de rango en Unnamed: 0"
+      },
+      {
+        "indice": 77027,
+        "columna": "Unnamed: 0",
+        "valor_original": 124131.0,
+        "valor_contaminado": -84222.5,
+        "problema": "Valor fuera de rango en Unnamed: 0"
+      },
+      {
+        "indice": 45083,
+        "columna": "Unnamed: 0",
+        "valor_original": 68121.0,
+        "valor_contaminado": -84222.5,
+        "problema": "Valor fuera de rango en Unnamed: 0"
+      },
+      {
+        "indice": 17590,
+        "columna": "Unnamed: 0",
+        "valor_original": 25329.0,
+        "valor_contaminado": -84222.5,
+        "problema": "Valor fuera de rango en Unnamed: 0"
+      },
+      {
+        "indice": 6758,
+        "columna": "Unnamed: 0",
+        "valor_original": 10274.0,
+        "valor_contaminado": -84222.5,
+        "problema": "Valor fuera de rango en Unnamed: 0"
+      },
+      {
+        "indice": 63976,
+        "columna": "Unnamed: 0",
+        "valor_original": 100120.0,
+        "valor_contaminado": -84222.5,
+        "problema": "Valor fuera de rango en Unnamed: 0"
+      },
+      {
+        "indice": 87003,
+        "columna": "Unnamed: 0",
+        "valor_original": 143030.0,
+        "valor_contaminado": 1684450,
+        "problema": "Valor fuera de rango en Unnamed: 0"
+      },
+      {
+        "indice": 94698,
+        "columna": "Unnamed: 0",
+        "valor_original": 158632.0,
+        "valor_contaminado": 1684450,
+        "problema": "Valor fuera de rango en Unnamed: 0"
+      },
+      {
+        "indice": 65887,
+        "columna": "Unnamed: 0",
+        "valor_original": 103490.0,
+        "valor_contaminado": -84222.5,
+        "problema": "Valor fuera de rango en Unnamed: 0"
+      },
+      {
+        "indice": 13383,
+        "columna": "Unnamed: 0",
+        "valor_original": 19346.0,
+        "valor_contaminado": 1684450,
+        "problema": "Valor fuera de rango en Unnamed: 0"
+      },
+      {
+        "indice": 70173,
+        "columna": "Unnamed: 0",
+        "valor_original": 111681.0,
+        "valor_contaminado": 1684450,
+        "problema": "Valor fuera de rango en Unnamed: 0"
+      },
+      {
+        "indice": 64886,
+        "columna": "Unnamed: 0",
+        "valor_original": 101647.0,
+        "valor_contaminado": -84222.5,
+        "problema": "Valor fuera de rango en Unnamed: 0"
+      },
+      {
+        "indice": 96178,
+        "columna": "Unnamed: 0",
+        "valor_original": 161320.0,
+        "valor_contaminado": -84222.5,
+        "problema": "Valor fuera de rango en Unnamed: 0"
+      },
+      {
+        "indice": 86060,
+        "columna": "Unnamed: 0",
+        "valor_original": 141141.0,
+        "valor_contaminado": -84222.5,
+        "problema": "Valor fuera de rango en Unnamed: 0"
+      },
+      {
+        "indice": 38279,
+        "columna": "Unnamed: 0",
+        "valor_original": 57674.0,
+        "valor_contaminado": -84222.5,
+        "problema": "Valor fuera de rango en Unnamed: 0"
+      }
+    ]
+  },
+  "caso3_outliers": {
+    "descripcion": "Outliers estadísticamente extremos pero técnicamente posibles",
+    "columnas_afectadas": [
+      "Unnamed: 0",
+      "price",
+      "baths",
+      "bedrooms",
+      "Area_in_Marla"
+    ],
+    "total_problemas": 9945,
+    "problemas": [
+      {
+        "indice": 98352,
+        "columna": "Unnamed: 0",
+        "valor_original": 166077.0,
+        "valor_contaminado": 1665778.41,
+        "problema": "Outlier estadístico"
+      },
+      {
+        "indice": 83622,
+        "columna": "Unnamed: 0",
+        "valor_original": 136670.0,
+        "valor_contaminado": -968558.75,
+        "problema": "Outlier estadístico"
+      },
+      {
+        "indice": 42831,
+        "columna": "Unnamed: 0",
+        "valor_original": 64736.0,
+        "valor_contaminado": -968558.75,
+        "problema": "Outlier estadístico"
+      },
+      {
+        "indice": 54361,
+        "columna": "Unnamed: 0",
+        "valor_original": 83876.0,
+        "valor_contaminado": -968558.75,
+        "problema": "Outlier estadístico"
+      },
+      {
+        "indice": 7375,
+        "columna": "Unnamed: 0",
+        "valor_original": 11116.0,
+        "valor_contaminado": 1651332.76,
+        "problema": "Outlier estadístico"
+      },
+      {
+        "indice": 45303,
+        "columna": "Unnamed: 0",
+        "valor_original": 68587.0,
+        "valor_contaminado": -968558.75,
+        "problema": "Outlier estadístico"
+      },
+      {
+        "indice": 71118,
+        "columna": "Unnamed: 0",
+        "valor_original": 113381.0,
+        "valor_contaminado": -968558.75,
+        "problema": "Outlier estadístico"
+      },
+      {
+        "indice": 21431,
+        "columna": "Unnamed: 0",
+        "valor_original": 30881.0,
+        "valor_contaminado": -968558.75,
+        "problema": "Outlier estadístico"
+      },
+      {
+        "indice": 8068,
+        "columna": "Unnamed: 0",
+        "valor_original": 12100.0,
+        "valor_contaminado": -968558.75,
+        "problema": "Outlier estadístico"
+      },
+      {
+        "indice": 23035,
+        "columna": "Unnamed: 0",
+        "valor_original": 34539.0,
+        "valor_contaminado": 1468525.41,
+        "problema": "Outlier estadístico"
+      },
+      {
+        "indice": 8899,
+        "columna": "Unnamed: 0",
+        "valor_original": 13229.0,
+        "valor_contaminado": -968558.75,
+        "problema": "Outlier estadístico"
+      },
+      {
+        "indice": 73936,
+        "columna": "Unnamed: 0",
+        "valor_original": 118386.0,
+        "valor_contaminado": -968558.75,
+        "problema": "Outlier estadístico"
+      },
+      {
+        "indice": 78151,
+        "columna": "Unnamed: 0",
+        "valor_original": 126180.0,
+        "valor_contaminado": 1858947.76,
+        "problema": "Outlier estadístico"
+      },
+      {
+        "indice": 42865,
+        "columna": "Unnamed: 0",
+        "valor_original": 64787.0,
+        "valor_contaminado": 1655635.38,
+        "problema": "Outlier estadístico"
+      },
+      {
+        "indice": 9971,
+        "columna": "Unnamed: 0",
+        "valor_original": 14679.0,
+        "valor_contaminado": 1906766.68,
+        "problema": "Outlier estadístico"
+      },
+      {
+        "indice": 89136,
+        "columna": "Unnamed: 0",
+        "valor_original": 147353.0,
+        "valor_contaminado": -968558.75,
+        "problema": "Outlier estadístico"
+      },
+      {
+        "indice": 17146,
+        "columna": "Unnamed: 0",
+        "valor_original": 24659.0,
+        "valor_contaminado": -968558.75,
+        "problema": "Outlier estadístico"
+      },
+      {
+        "indice": 58752,
+        "columna": "Unnamed: 0",
+        "valor_original": 91126.0,
+        "valor_contaminado": 1589366.64,
+        "problema": "Outlier estadístico"
+      },
+      {
+        "indice": 95910,
+        "columna": "Unnamed: 0",
+        "valor_original": 160636.0,
+        "valor_contaminado": -968558.75,
+        "problema": "Outlier estadístico"
+      },
+      {
+        "indice": 74128,
+        "columna": "Unnamed: 0",
+        "valor_original": 118765.0,
+        "valor_contaminado": -968558.75,
+        "problema": "Outlier estadístico"
+      }
+    ]
+  },
+  "caso4_consistencia": {
+    "descripcion": "No se encontraron pares de columnas relacionadas",
+    "total_problemas": 0,
+    "problemas": []
+  },
+  "caso5_valores_faltantes": {
+    "descripcion": "Valores faltantes (vacíos, N/A, NULL, etc.)",
+    "columnas_afectadas": [
+      "Unnamed: 0",
+      "property_type",
+      "price",
+      "location",
+      "city",
+      "baths",
+      "purpose",
+      "bedrooms",
+      "Area_in_Marla"
+    ],
+    "total_problemas": 9945,
+    "problemas": [
+      {
+        "indice": 46737,
+        "columna": "Unnamed: 0",
+        "valor_original": 70821.0,
+        "valor_faltante": "-",
+        "problema": "Valor faltante representado como: '-'"
+      },
+      {
+        "indice": 99099,
+        "columna": "Unnamed: 0",
+        "valor_original": -968558.75,
+        "valor_faltante": "NULL",
+        "problema": "Valor faltante representado como: 'NULL'"
+      },
+      {
+        "indice": 33699,
+        "columna": "Unnamed: 0",
+        "valor_original": 50536.0,
+        "valor_faltante": "N/A",
+        "problema": "Valor faltante representado como: 'N/A'"
+      },
+      {
+        "indice": 81812,
+        "columna": "Unnamed: 0",
+        "valor_original": 133859.0,
+        "valor_faltante": "N/A",
+        "problema": "Valor faltante representado como: 'N/A'"
+      },
+      {
+        "indice": 85692,
+        "columna": "Unnamed: 0",
+        "valor_original": 140576.0,
+        "valor_faltante": "na",
+        "problema": "Valor faltante representado como: 'na'"
+      },
+      {
+        "indice": 64124,
+        "columna": "Unnamed: 0",
+        "valor_original": 100387.0,
+        "valor_faltante": "na",
+        "problema": "Valor faltante representado como: 'na'"
+      },
+      {
+        "indice": 26946,
+        "columna": "Unnamed: 0",
+        "valor_original": 40338.0,
+        "valor_faltante": "-",
+        "problema": "Valor faltante representado como: '-'"
+      },
+      {
+        "indice": 26985,
+        "columna": "Unnamed: 0",
+        "valor_original": 40395.0,
+        "valor_faltante": "NULL",
+        "problema": "Valor faltante representado como: 'NULL'"
+      },
+      {
+        "indice": 24384,
+        "columna": "Unnamed: 0",
+        "valor_original": 36550.0,
+        "valor_faltante": "null",
+        "problema": "Valor faltante representado como: 'null'"
+      },
+      {
+        "indice": 62177,
+        "columna": "Unnamed: 0",
+        "valor_original": 97079.0,
+        "valor_faltante": "na",
+        "problema": "Valor faltante representado como: 'na'"
+      },
+      {
+        "indice": 88257,
+        "columna": "Unnamed: 0",
+        "valor_original": 145417.0,
+        "valor_faltante": "N/A",
+        "problema": "Valor faltante representado como: 'N/A'"
+      },
+      {
+        "indice": 10064,
+        "columna": "Unnamed: 0",
+        "valor_original": 14812.0,
+        "valor_faltante": "?",
+        "problema": "Valor faltante representado como: '?'"
+      },
+      {
+        "indice": 35517,
+        "columna": "Unnamed: 0",
+        "valor_original": 53447.0,
+        "valor_faltante": "",
+        "problema": "Valor faltante representado como: ''"
+      },
+      {
+        "indice": 27216,
+        "columna": "Unnamed: 0",
+        "valor_original": 40747.0,
+        "valor_faltante": "N/A",
+        "problema": "Valor faltante representado como: 'N/A'"
+      },
+      {
+        "indice": 55546,
+        "columna": "Unnamed: 0",
+        "valor_original": 85963.0,
+        "valor_faltante": "-",
+        "problema": "Valor faltante representado como: '-'"
+      },
+      {
+        "indice": 28862,
+        "columna": "Unnamed: 0",
+        "valor_original": 1684450.0,
+        "valor_faltante": "na",
+        "problema": "Valor faltante representado como: 'na'"
+      },
+      {
+        "indice": 45335,
+        "columna": "Unnamed: 0",
+        "valor_original": 68626.0,
+        "valor_faltante": "",
+        "problema": "Valor faltante representado como: ''"
+      },
+      {
+        "indice": 87436,
+        "columna": "Unnamed: 0",
+        "valor_original": 143924.0,
+        "valor_faltante": "NULL",
+        "problema": "Valor faltante representado como: 'NULL'"
+      },
+      {
+        "indice": 36956,
+        "columna": "Unnamed: 0",
+        "valor_original": 55635.0,
+        "valor_faltante": "NULL",
+        "problema": "Valor faltante representado como: 'NULL'"
+      },
+      {
+        "indice": 61699,
+        "columna": "Unnamed: 0",
+        "valor_original": 96313.0,
+        "valor_faltante": "-",
+        "problema": "Valor faltante representado como: '-'"
+      }
+    ]
+  },
+  "caso6_tipos_datos": {
+    "descripcion": "Valores numéricos representados como texto",
+    "columnas_afectadas": [
+      "Unnamed: 0",
+      "price",
+      "baths",
+      "bedrooms",
+      "Area_in_Marla"
+    ],
+    "total_problemas": 9945,
+    "problemas": [
+      {
+        "indice": 1402,
+        "columna": "Unnamed: 0",
+        "valor_original": 2120.0,
+        "valor_texto": "dieciocho",
+        "problema": "Valor numérico como texto: dieciocho"
+      },
+      {
+        "indice": 15744,
+        "columna": "Unnamed: 0",
+        "valor_original": 22669.0,
+        "valor_texto": "twelve",
+        "problema": "Valor numérico como texto: twelve"
+      },
+      {
+        "indice": 33051,
+        "columna": "Unnamed: 0",
+        "valor_original": 49527.0,
+        "valor_texto": "twelve",
+        "problema": "Valor numérico como texto: twelve"
+      },
+      {
+        "indice": 64726,
+        "columna": "Unnamed: 0",
+        "valor_original": 101323.0,
+        "valor_texto": "cinco punto tres",
+        "problema": "Valor numérico como texto: cinco punto tres"
+      },
+      {
+        "indice": 63062,
+        "columna": "Unnamed: 0",
+        "valor_original": 1882863.62,
+        "valor_texto": "doce",
+        "problema": "Valor numérico como texto: doce"
+      },
+      {
+        "indice": 39329,
+        "columna": "Unnamed: 0",
+        "valor_original": 59343.0,
+        "valor_texto": "dieciocho",
+        "problema": "Valor numérico como texto: dieciocho"
+      },
+      {
+        "indice": 79204,
+        "columna": "Unnamed: 0",
+        "valor_original": -84222.5,
+        "valor_texto": "ocho horas",
+        "problema": "Valor numérico como texto: ocho horas"
+      },
+      {
+        "indice": 41608,
+        "columna": "Unnamed: 0",
+        "valor_original": 62841.0,
+        "valor_texto": "dieciocho",
+        "problema": "Valor numérico como texto: dieciocho"
+      },
+      {
+        "indice": 89436,
+        "columna": "Unnamed: 0",
+        "valor_original": 147917.0,
+        "valor_texto": "treinta y dos",
+        "problema": "Valor numérico como texto: treinta y dos"
+      },
+      {
+        "indice": 70580,
+        "columna": "Unnamed: 0",
+        "valor_original": 112346.0,
+        "valor_texto": "seven",
+        "problema": "Valor numérico como texto: seven"
+      },
+      {
+        "indice": 45183,
+        "columna": "Unnamed: 0",
+        "valor_original": 68328.0,
+        "valor_texto": "veinte",
+        "problema": "Valor numérico como texto: veinte"
+      },
+      {
+        "indice": 61744,
+        "columna": "Unnamed: 0",
+        "valor_original": 96367.0,
+        "valor_texto": "twenty",
+        "problema": "Valor numérico como texto: twenty"
+      },
+      {
+        "indice": 83863,
+        "columna": "Unnamed: 0",
+        "valor_original": 137075.0,
+        "valor_texto": "veinte",
+        "problema": "Valor numérico como texto: veinte"
+      },
+      {
+        "indice": 76984,
+        "columna": "Unnamed: 0",
+        "valor_original": 124062.0,
+        "valor_texto": "nueve",
+        "problema": "Valor numérico como texto: nueve"
+      },
+      {
+        "indice": 28207,
+        "columna": "Unnamed: 0",
+        "valor_original": -84222.5,
+        "valor_texto": "twelve",
+        "problema": "Valor numérico como texto: twelve"
+      },
+      {
+        "indice": 1036,
+        "columna": "Unnamed: 0",
+        "valor_original": "NaN",
+        "valor_texto": "five point two",
+        "problema": "Valor numérico como texto: five point two"
+      },
+      {
+        "indice": 84870,
+        "columna": "Unnamed: 0",
+        "valor_original": 138718.0,
+        "valor_texto": "dieciocho",
+        "problema": "Valor numérico como texto: dieciocho"
+      },
+      {
+        "indice": 57544,
+        "columna": "Unnamed: 0",
+        "valor_original": 89201.0,
+        "valor_texto": "nueve",
+        "problema": "Valor numérico como texto: nueve"
+      },
+      {
+        "indice": 95086,
+        "columna": "Unnamed: 0",
+        "valor_original": -84222.5,
+        "valor_texto": "five point two",
+        "problema": "Valor numérico como texto: five point two"
+      },
+      {
+        "indice": 19256,
+        "columna": "Unnamed: 0",
+        "valor_original": 27739.0,
+        "valor_texto": "cinco punto tres",
+        "problema": "Valor numérico como texto: cinco punto tres"
+      }
+    ]
+  },
+  "caso7_formato": {
+    "descripcion": "Problemas de formato (espacios extra, caracteres especiales)",
+    "columnas_afectadas": [
+      "property_type",
+      "location",
+      "city",
+      "purpose"
+    ],
+    "total_problemas": 39796,
+    "problemas": [
+      {
+        "indice": 65304,
+        "columna": "property_type",
+        "valor_original": "House",
+        "valor_contaminado": "'[House]'",
+        "problema": "Espacios extra o caracteres especiales"
+      },
+      {
+        "indice": 21074,
+        "columna": "property_type",
+        "valor_original": "House",
+        "valor_contaminado": "'*House*'",
+        "problema": "Espacios extra o caracteres especiales"
+      },
+      {
+        "indice": 8457,
+        "columna": "property_type",
+        "valor_original": "Flat",
+        "valor_contaminado": "'Flat '",
+        "problema": "Espacios extra o caracteres especiales"
+      },
+      {
+        "indice": 4198,
+        "columna": "property_type",
+        "valor_original": "House",
+        "valor_contaminado": "' House'",
+        "problema": "Espacios extra o caracteres especiales"
+      },
+      {
+        "indice": 43505,
+        "columna": "property_type",
+        "valor_original": "House",
+        "valor_contaminado": "'House\\t'",
+        "problema": "Espacios extra o caracteres especiales"
+      },
+      {
+        "indice": 90196,
+        "columna": "property_type",
+        "valor_original": "HOUSE",
+        "valor_contaminado": "'HOUSE '",
+        "problema": "Espacios extra o caracteres especiales"
+      },
+      {
+        "indice": 41153,
+        "columna": "property_type",
+        "valor_original": "House",
+        "valor_contaminado": "'House\\t'",
+        "problema": "Espacios extra o caracteres especiales"
+      },
+      {
+        "indice": 89729,
+        "columna": "property_type",
+        "valor_original": "Flat",
+        "valor_contaminado": "'  Flat  '",
+        "problema": "Espacios extra o caracteres especiales"
+      },
+      {
+        "indice": 32162,
+        "columna": "property_type",
+        "valor_original": "House",
+        "valor_contaminado": "'House\\t'",
+        "problema": "Espacios extra o caracteres especiales"
+      },
+      {
+        "indice": 85676,
+        "columna": "property_type",
+        "valor_original": "House",
+        "valor_contaminado": "'*House*'",
+        "problema": "Espacios extra o caracteres especiales"
+      },
+      {
+        "indice": 67135,
+        "columna": "property_type",
+        "valor_original": "Flat",
+        "valor_contaminado": "'[Flat]'",
+        "problema": "Espacios extra o caracteres especiales"
+      },
+      {
+        "indice": 53650,
+        "columna": "property_type",
+        "valor_original": "House",
+        "valor_contaminado": "'*House*'",
+        "problema": "Espacios extra o caracteres especiales"
+      },
+      {
+        "indice": 4858,
+        "columna": "property_type",
+        "valor_original": "House",
+        "valor_contaminado": "' House'",
+        "problema": "Espacios extra o caracteres especiales"
+      },
+      {
+        "indice": 1844,
+        "columna": "property_type",
+        "valor_original": "House",
+        "valor_contaminado": "'  House  '",
+        "problema": "Espacios extra o caracteres especiales"
+      },
+      {
+        "indice": 90942,
+        "columna": "property_type",
+        "valor_original": "Flat",
+        "valor_contaminado": "'Flat\\t'",
+        "problema": "Espacios extra o caracteres especiales"
+      },
+      {
+        "indice": 45303,
+        "columna": "property_type",
+        "valor_original": "Flat",
+        "valor_contaminado": "'  Flat  '",
+        "problema": "Espacios extra o caracteres especiales"
+      },
+      {
+        "indice": 68334,
+        "columna": "property_type",
+        "valor_original": "House",
+        "valor_contaminado": "' House'",
+        "problema": "Espacios extra o caracteres especiales"
+      },
+      {
+        "indice": 90066,
+        "columna": "property_type",
+        "valor_original": "House",
+        "valor_contaminado": "'House\\t'",
+        "problema": "Espacios extra o caracteres especiales"
+      },
+      {
+        "indice": 47869,
+        "columna": "property_type",
+        "valor_original": "Upper Portion",
+        "valor_contaminado": "'Upper Portion\\t'",
+        "problema": "Espacios extra o caracteres especiales"
+      },
+      {
+        "indice": 7814,
+        "columna": "property_type",
+        "valor_original": "House",
+        "valor_contaminado": "' House'",
+        "problema": "Espacios extra o caracteres especiales"
+      }
+    ]
+  }
+}

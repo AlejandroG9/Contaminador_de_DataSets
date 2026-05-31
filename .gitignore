@@ -1,0 +1,12 @@
+
+# basura ignorada
+.DS_Store
+._.DS_Store
+.idea/
+.vscode/
+__pycache__/
+*.pyc
+venv/
+.venv/
+amazon_ecommerce_1M.csv
+amazon_ecommerce_1M_contaminado.csv

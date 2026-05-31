@@ -1,0 +1,906 @@
+{
+  "caso1_normalizacion_categorias": {
+    "descripcion": "Problemas de normalización en categorías (mayúsculas, espacios, guiones)",
+    "columnas_afectadas": [
+      "Scenario_Type",
+      "Stress_Level",
+      "Decision_Taken",
+      "Decision_Quality",
+      "Experience_Level"
+    ],
+    "total_problemas": 150,
+    "problemas": [
+      {
+        "indice": 57,
+        "columna": "Scenario_Type",
+        "valor_original": "Interview",
+        "valor_contaminado": "exam"
+      },
+      {
+        "indice": 12,
+        "columna": "Scenario_Type",
+        "valor_original": "Emergency",
+        "valor_contaminado": "EMERGENCY"
+      },
+      {
+        "indice": 140,
+        "columna": "Scenario_Type",
+        "valor_original": "Interview",
+        "valor_contaminado": "Interview "
+      },
+      {
+        "indice": 125,
+        "columna": "Scenario_Type",
+        "valor_original": "Emergency",
+        "valor_contaminado": "EMERGENCY"
+      },
+      {
+        "indice": 114,
+        "columna": "Scenario_Type",
+        "valor_original": "Emergency",
+        "valor_contaminado": " Emergency "
+      },
+      {
+        "indice": 71,
+        "columna": "Scenario_Type",
+        "valor_original": "Interview",
+        "valor_contaminado": " Exam "
+      },
+      {
+        "indice": 52,
+        "columna": "Scenario_Type",
+        "valor_original": "Interview",
+        "valor_contaminado": " Interview"
+      },
+      {
+        "indice": 279,
+        "columna": "Scenario_Type",
+        "valor_original": "Emergency",
+        "valor_contaminado": "EXAM"
+      },
+      {
+        "indice": 44,
+        "columna": "Scenario_Type",
+        "valor_original": "Exam",
+        "valor_contaminado": "interview"
+      },
+      {
+        "indice": 216,
+        "columna": "Scenario_Type",
+        "valor_original": "Interview",
+        "valor_contaminado": " Emergency"
+      },
+      {
+        "indice": 16,
+        "columna": "Scenario_Type",
+        "valor_original": "Exam",
+        "valor_contaminado": "Emergency "
+      },
+      {
+        "indice": 15,
+        "columna": "Scenario_Type",
+        "valor_original": "Emergency",
+        "valor_contaminado": "exam"
+      },
+      {
+        "indice": 47,
+        "columna": "Scenario_Type",
+        "valor_original": "Emergency",
+        "valor_contaminado": " Interview "
+      },
+      {
+        "indice": 111,
+        "columna": "Scenario_Type",
+        "valor_original": "Exam",
+        "valor_contaminado": "emergency"
+      },
+      {
+        "indice": 119,
+        "columna": "Scenario_Type",
+        "valor_original": "Interview",
+        "valor_contaminado": "exam"
+      },
+      {
+        "indice": 258,
+        "columna": "Scenario_Type",
+        "valor_original": "Interview",
+        "valor_contaminado": "Emergency "
+      },
+      {
+        "indice": 13,
+        "columna": "Scenario_Type",
+        "valor_original": "Exam",
+        "valor_contaminado": " Exam "
+      },
+      {
+        "indice": 287,
+        "columna": "Scenario_Type",
+        "valor_original": "Emergency",
+        "valor_contaminado": "Interview "
+      },
+      {
+        "indice": 101,
+        "columna": "Scenario_Type",
+        "valor_original": "Interview",
+        "valor_contaminado": "INTERVIEW"
+      },
+      {
+        "indice": 214,
+        "columna": "Scenario_Type",
+        "valor_original": "Interview",
+        "valor_contaminado": " Emergency "
+      }
+    ]
+  },
+  "caso2_validacion_rangos": {
+    "descripcion": "Valores numéricos fuera de rangos válidos o lógicos",
+    "columnas_afectadas": [
+      "Time_Limit",
+      "Decision_Time_Taken",
+      "Age",
+      "Heart_Rate"
+    ],
+    "total_problemas": 120,
+    "problemas": [
+      {
+        "indice": 260,
+        "columna": "Time_Limit",
+        "valor_original": 42.0,
+        "valor_contaminado": -5.0,
+        "problema": "Valor fuera de rango en Time_Limit"
+      },
+      {
+        "indice": 41,
+        "columna": "Time_Limit",
+        "valor_original": 43.0,
+        "valor_contaminado": 25.0,
+        "problema": "Valor fuera de rango en Time_Limit"
+      },
+      {
+        "indice": 95,
+        "columna": "Time_Limit",
+        "valor_original": 25.0,
+        "valor_contaminado": 30.5,
+        "problema": "Valor fuera de rango en Time_Limit"
+      },
+      {
+        "indice": 35,
+        "columna": "Time_Limit",
+        "valor_original": 58.0,
+        "valor_contaminado": 25.0,
+        "problema": "Valor fuera de rango en Time_Limit"
+      },
+      {
+        "indice": 34,
+        "columna": "Time_Limit",
+        "valor_original": 58.0,
+        "valor_contaminado": 30.5,
+        "problema": "Valor fuera de rango en Time_Limit"
+      },
+      {
+        "indice": 120,
+        "columna": "Time_Limit",
+        "valor_original": 27.0,
+        "valor_contaminado": -5.0,
+        "problema": "Valor fuera de rango en Time_Limit"
+      },
+      {
+        "indice": 206,
+        "columna": "Time_Limit",
+        "valor_original": 14.0,
+        "valor_contaminado": 25.0,
+        "problema": "Valor fuera de rango en Time_Limit"
+      },
+      {
+        "indice": 61,
+        "columna": "Time_Limit",
+        "valor_original": 41.0,
+        "valor_contaminado": 30.5,
+        "problema": "Valor fuera de rango en Time_Limit"
+      },
+      {
+        "indice": 291,
+        "columna": "Time_Limit",
+        "valor_original": 31.0,
+        "valor_contaminado": 30.5,
+        "problema": "Valor fuera de rango en Time_Limit"
+      },
+      {
+        "indice": 126,
+        "columna": "Time_Limit",
+        "valor_original": 20.0,
+        "valor_contaminado": 25.0,
+        "problema": "Valor fuera de rango en Time_Limit"
+      },
+      {
+        "indice": 296,
+        "columna": "Time_Limit",
+        "valor_original": 36.0,
+        "valor_contaminado": 48.0,
+        "problema": "Valor fuera de rango en Time_Limit"
+      },
+      {
+        "indice": 20,
+        "columna": "Time_Limit",
+        "valor_original": 37.0,
+        "valor_contaminado": 30.5,
+        "problema": "Valor fuera de rango en Time_Limit"
+      },
+      {
+        "indice": 214,
+        "columna": "Time_Limit",
+        "valor_original": 31.0,
+        "valor_contaminado": -5.0,
+        "problema": "Valor fuera de rango en Time_Limit"
+      },
+      {
+        "indice": 298,
+        "columna": "Time_Limit",
+        "valor_original": 59.0,
+        "valor_contaminado": 30.5,
+        "problema": "Valor fuera de rango en Time_Limit"
+      },
+      {
+        "indice": 289,
+        "columna": "Time_Limit",
+        "valor_original": 17.0,
+        "valor_contaminado": -5.0,
+        "problema": "Valor fuera de rango en Time_Limit"
+      },
+      {
+        "indice": 267,
+        "columna": "Time_Limit",
+        "valor_original": 40.0,
+        "valor_contaminado": 25.0,
+        "problema": "Valor fuera de rango en Time_Limit"
+      },
+      {
+        "indice": 161,
+        "columna": "Time_Limit",
+        "valor_original": 30.0,
+        "valor_contaminado": 30.5,
+        "problema": "Valor fuera de rango en Time_Limit"
+      },
+      {
+        "indice": 133,
+        "columna": "Time_Limit",
+        "valor_original": 19.0,
+        "valor_contaminado": -5.0,
+        "problema": "Valor fuera de rango en Time_Limit"
+      },
+      {
+        "indice": 104,
+        "columna": "Time_Limit",
+        "valor_original": 52.0,
+        "valor_contaminado": -5.0,
+        "problema": "Valor fuera de rango en Time_Limit"
+      },
+      {
+        "indice": 160,
+        "columna": "Time_Limit",
+        "valor_original": 47.0,
+        "valor_contaminado": 25.0,
+        "problema": "Valor fuera de rango en Time_Limit"
+      }
+    ]
+  },
+  "caso3_outliers": {
+    "descripcion": "Outliers estadísticamente extremos pero técnicamente posibles",
+    "columnas_afectadas": [
+      "Age",
+      "Heart_Rate",
+      "Time_Limit",
+      "Decision_Time_Taken"
+    ],
+    "total_problemas": 28,
+    "problemas": [
+      {
+        "indice": 196,
+        "columna": "Age",
+        "valor_original": 38.0,
+        "valor_contaminado": -100.0,
+        "problema": "Outlier estadístico"
+      },
+      {
+        "indice": 78,
+        "columna": "Age",
+        "valor_original": 27.0,
+        "valor_contaminado": -100.0,
+        "problema": "Outlier estadístico"
+      },
+      {
+        "indice": 109,
+        "columna": "Age",
+        "valor_original": 28.0,
+        "valor_contaminado": 228.48,
+        "problema": "Outlier estadístico"
+      },
+      {
+        "indice": 32,
+        "columna": "Age",
+        "valor_original": 29.0,
+        "valor_contaminado": 216.17,
+        "problema": "Outlier estadístico"
+      },
+      {
+        "indice": 212,
+        "columna": "Age",
+        "valor_original": 32.0,
+        "valor_contaminado": -100.0,
+        "problema": "Outlier estadístico"
+      },
+      {
+        "indice": 208,
+        "columna": "Age",
+        "valor_original": 24.0,
+        "valor_contaminado": -99.49,
+        "problema": "Outlier estadístico"
+      },
+      {
+        "indice": 169,
+        "columna": "Age",
+        "valor_original": 150.0,
+        "valor_contaminado": 219.58,
+        "problema": "Outlier estadístico"
+      },
+      {
+        "indice": 214,
+        "columna": "Heart_Rate",
+        "valor_original": 70.0,
+        "valor_contaminado": -805.0,
+        "problema": "Outlier estadístico"
+      },
+      {
+        "indice": 275,
+        "columna": "Heart_Rate",
+        "valor_original": 99.0,
+        "valor_contaminado": 1541.93,
+        "problema": "Outlier estadístico"
+      },
+      {
+        "indice": 279,
+        "columna": "Heart_Rate",
+        "valor_original": 96.0,
+        "valor_contaminado": 1567.2,
+        "problema": "Outlier estadístico"
+      },
+      {
+        "indice": 112,
+        "columna": "Heart_Rate",
+        "valor_original": -70.0,
+        "valor_contaminado": 1656.49,
+        "problema": "Outlier estadístico"
+      },
+      {
+        "indice": 249,
+        "columna": "Heart_Rate",
+        "valor_original": 95.0,
+        "valor_contaminado": 1480.34,
+        "problema": "Outlier estadístico"
+      },
+      {
+        "indice": 139,
+        "columna": "Heart_Rate",
+        "valor_original": 81.0,
+        "valor_contaminado": 1506.74,
+        "problema": "Outlier estadístico"
+      },
+      {
+        "indice": 223,
+        "columna": "Heart_Rate",
+        "valor_original": 110.0,
+        "valor_contaminado": -805.0,
+        "problema": "Outlier estadístico"
+      },
+      {
+        "indice": 236,
+        "columna": "Time_Limit",
+        "valor_original": 31.0,
+        "valor_contaminado": -28.68,
+        "problema": "Outlier estadístico"
+      },
+      {
+        "indice": 93,
+        "columna": "Time_Limit",
+        "valor_original": 41.0,
+        "valor_contaminado": -37.5,
+        "problema": "Outlier estadístico"
+      },
+      {
+        "indice": 25,
+        "columna": "Time_Limit",
+        "valor_original": 47.0,
+        "valor_contaminado": -37.5,
+        "problema": "Outlier estadístico"
+      },
+      {
+        "indice": 133,
+        "columna": "Time_Limit",
+        "valor_original": -5.0,
+        "valor_contaminado": -37.33,
+        "problema": "Outlier estadístico"
+      },
+      {
+        "indice": 194,
+        "columna": "Time_Limit",
+        "valor_original": 25.0,
+        "valor_contaminado": -35.37,
+        "problema": "Outlier estadístico"
+      },
+      {
+        "indice": 167,
+        "columna": "Time_Limit",
+        "valor_original": 38.0,
+        "valor_contaminado": -37.5,
+        "problema": "Outlier estadístico"
+      }
+    ]
+  },
+  "caso4_consistencia": {
+    "descripcion": "No se encontraron pares de columnas relacionadas",
+    "total_problemas": 0,
+    "problemas": []
+  },
+  "caso5_valores_faltantes": {
+    "descripcion": "Valores faltantes (vacíos, N/A, NULL, etc.)",
+    "columnas_afectadas": [
+      "Scenario_Type",
+      "Time_Limit",
+      "Stress_Level",
+      "Decision_Taken",
+      "Decision_Quality",
+      "Age",
+      "Experience_Level",
+      "Heart_Rate",
+      "Decision_Time_Taken"
+    ],
+    "total_problemas": 27,
+    "problemas": [
+      {
+        "indice": 159,
+        "columna": "Scenario_Type",
+        "valor_original": "Interview",
+        "valor_faltante": "?",
+        "problema": "Valor faltante representado como: '?'"
+      },
+      {
+        "indice": 294,
+        "columna": "Scenario_Type",
+        "valor_original": "Emergency",
+        "valor_faltante": "NaN",
+        "problema": "Valor faltante representado como: 'NaN'"
+      },
+      {
+        "indice": 192,
+        "columna": "Scenario_Type",
+        "valor_original": "Exam",
+        "valor_faltante": "N/A",
+        "problema": "Valor faltante representado como: 'N/A'"
+      },
+      {
+        "indice": 124,
+        "columna": "Time_Limit",
+        "valor_original": 60.0,
+        "valor_faltante": "N/A",
+        "problema": "Valor faltante representado como: 'N/A'"
+      },
+      {
+        "indice": 52,
+        "columna": "Time_Limit",
+        "valor_original": 20.0,
+        "valor_faltante": "",
+        "problema": "Valor faltante representado como: ''"
+      },
+      {
+        "indice": 154,
+        "columna": "Time_Limit",
+        "valor_original": 50.0,
+        "valor_faltante": "na",
+        "problema": "Valor faltante representado como: 'na'"
+      },
+      {
+        "indice": 272,
+        "columna": "Stress_Level",
+        "valor_original": "Very High",
+        "valor_faltante": "N/A",
+        "problema": "Valor faltante representado como: 'N/A'"
+      },
+      {
+        "indice": 219,
+        "columna": "Stress_Level",
+        "valor_original": "Medium",
+        "valor_faltante": "na",
+        "problema": "Valor faltante representado como: 'na'"
+      },
+      {
+        "indice": 189,
+        "columna": "Stress_Level",
+        "valor_original": " High",
+        "valor_faltante": "",
+        "problema": "Valor faltante representado como: ''"
+      },
+      {
+        "indice": 215,
+        "columna": "Decision_Taken",
+        "valor_original": "Structured Answer",
+        "valor_faltante": "?",
+        "problema": "Valor faltante representado como: '?'"
+      },
+      {
+        "indice": 250,
+        "columna": "Decision_Taken",
+        "valor_original": "Quick Decision",
+        "valor_faltante": "na",
+        "problema": "Valor faltante representado como: 'na'"
+      },
+      {
+        "indice": 54,
+        "columna": "Decision_Taken",
+        "valor_original": "logical answer",
+        "valor_faltante": "-",
+        "problema": "Valor faltante representado como: '-'"
+      },
+      {
+        "indice": 78,
+        "columna": "Decision_Quality",
+        "valor_original": "High",
+        "valor_faltante": "null",
+        "problema": "Valor faltante representado como: 'null'"
+      },
+      {
+        "indice": 222,
+        "columna": "Decision_Quality",
+        "valor_original": "High",
+        "valor_faltante": "-",
+        "problema": "Valor faltante representado como: '-'"
+      },
+      {
+        "indice": 90,
+        "columna": "Decision_Quality",
+        "valor_original": "High",
+        "valor_faltante": "-",
+        "problema": "Valor faltante representado como: '-'"
+      },
+      {
+        "indice": 223,
+        "columna": "Age",
+        "valor_original": 0.0,
+        "valor_faltante": "NaN",
+        "problema": "Valor faltante representado como: 'NaN'"
+      },
+      {
+        "indice": 137,
+        "columna": "Age",
+        "valor_original": 33.0,
+        "valor_faltante": "N/A",
+        "problema": "Valor faltante representado como: 'N/A'"
+      },
+      {
+        "indice": 165,
+        "columna": "Age",
+        "valor_original": 34.0,
+        "valor_faltante": "null",
+        "problema": "Valor faltante representado como: 'null'"
+      },
+      {
+        "indice": 230,
+        "columna": "Experience_Level",
+        "valor_original": "Beginner",
+        "valor_faltante": "?",
+        "problema": "Valor faltante representado como: '?'"
+      },
+      {
+        "indice": 124,
+        "columna": "Experience_Level",
+        "valor_original": "Beginner",
+        "valor_faltante": "na",
+        "problema": "Valor faltante representado como: 'na'"
+      }
+    ]
+  },
+  "caso6_tipos_datos": {
+    "descripcion": "Valores numéricos representados como texto",
+    "columnas_afectadas": [
+      "Age",
+      "Heart_Rate",
+      "Time_Limit",
+      "Decision_Time_Taken"
+    ],
+    "total_problemas": 28,
+    "problemas": [
+      {
+        "indice": 43,
+        "columna": "Age",
+        "valor_original": 32.0,
+        "valor_texto": "twelve",
+        "problema": "Valor numérico como texto: twelve"
+      },
+      {
+        "indice": 123,
+        "columna": "Age",
+        "valor_original": 23.0,
+        "valor_texto": "nueve",
+        "problema": "Valor numérico como texto: nueve"
+      },
+      {
+        "indice": 208,
+        "columna": "Age",
+        "valor_original": -99.49,
+        "valor_texto": "veinte",
+        "problema": "Valor numérico como texto: veinte"
+      },
+      {
+        "indice": 250,
+        "columna": "Age",
+        "valor_original": 30.0,
+        "valor_texto": "cinco punto tres",
+        "problema": "Valor numérico como texto: cinco punto tres"
+      },
+      {
+        "indice": 284,
+        "columna": "Age",
+        "valor_original": 28.0,
+        "valor_texto": "treinta y dos",
+        "problema": "Valor numérico como texto: treinta y dos"
+      },
+      {
+        "indice": 243,
+        "columna": "Age",
+        "valor_original": 25.0,
+        "valor_texto": "ocho horas",
+        "problema": "Valor numérico como texto: ocho horas"
+      },
+      {
+        "indice": 251,
+        "columna": "Age",
+        "valor_original": 20.0,
+        "valor_texto": "five point two",
+        "problema": "Valor numérico como texto: five point two"
+      },
+      {
+        "indice": 124,
+        "columna": "Heart_Rate",
+        "valor_original": -70.0,
+        "valor_texto": "twenty",
+        "problema": "Valor numérico como texto: twenty"
+      },
+      {
+        "indice": 156,
+        "columna": "Heart_Rate",
+        "valor_original": 97.0,
+        "valor_texto": "five point two",
+        "problema": "Valor numérico como texto: five point two"
+      },
+      {
+        "indice": 297,
+        "columna": "Heart_Rate",
+        "valor_original": 72.0,
+        "valor_texto": "doce",
+        "problema": "Valor numérico como texto: doce"
+      },
+      {
+        "indice": 188,
+        "columna": "Heart_Rate",
+        "valor_original": 106.0,
+        "valor_texto": "seven",
+        "problema": "Valor numérico como texto: seven"
+      },
+      {
+        "indice": 242,
+        "columna": "Heart_Rate",
+        "valor_original": 124.0,
+        "valor_texto": "twenty",
+        "problema": "Valor numérico como texto: twenty"
+      },
+      {
+        "indice": 283,
+        "columna": "Heart_Rate",
+        "valor_original": 113.0,
+        "valor_texto": "twenty",
+        "problema": "Valor numérico como texto: twenty"
+      },
+      {
+        "indice": 271,
+        "columna": "Heart_Rate",
+        "valor_original": 87.0,
+        "valor_texto": "doce",
+        "problema": "Valor numérico como texto: doce"
+      },
+      {
+        "indice": 232,
+        "columna": "Time_Limit",
+        "valor_original": 31.0,
+        "valor_texto": "twenty",
+        "problema": "Valor numérico como texto: twenty"
+      },
+      {
+        "indice": 138,
+        "columna": "Time_Limit",
+        "valor_original": 43.0,
+        "valor_texto": "cinco punto tres",
+        "problema": "Valor numérico como texto: cinco punto tres"
+      },
+      {
+        "indice": 156,
+        "columna": "Time_Limit",
+        "valor_original": 28.0,
+        "valor_texto": "doce",
+        "problema": "Valor numérico como texto: doce"
+      },
+      {
+        "indice": 128,
+        "columna": "Time_Limit",
+        "valor_original": 13.0,
+        "valor_texto": "seven",
+        "problema": "Valor numérico como texto: seven"
+      },
+      {
+        "indice": 118,
+        "columna": "Time_Limit",
+        "valor_original": 39.0,
+        "valor_texto": "nueve",
+        "problema": "Valor numérico como texto: nueve"
+      },
+      {
+        "indice": 61,
+        "columna": "Time_Limit",
+        "valor_original": 30.5,
+        "valor_texto": "doce",
+        "problema": "Valor numérico como texto: doce"
+      }
+    ]
+  },
+  "caso7_formato": {
+    "descripcion": "Problemas de formato (espacios extra, caracteres especiales)",
+    "columnas_afectadas": [
+      "Scenario_Type",
+      "Stress_Level",
+      "Decision_Taken",
+      "Decision_Quality",
+      "Experience_Level"
+    ],
+    "total_problemas": 150,
+    "problemas": [
+      {
+        "indice": 273,
+        "columna": "Scenario_Type",
+        "valor_original": "Interview",
+        "valor_contaminado": "'Interview '",
+        "problema": "Espacios extra o caracteres especiales"
+      },
+      {
+        "indice": 64,
+        "columna": "Scenario_Type",
+        "valor_original": "Interview",
+        "valor_contaminado": "' Interview'",
+        "problema": "Espacios extra o caracteres especiales"
+      },
+      {
+        "indice": 140,
+        "columna": "Scenario_Type",
+        "valor_original": "Interview ",
+        "valor_contaminado": "'*Interview *'",
+        "problema": "Espacios extra o caracteres especiales"
+      },
+      {
+        "indice": 23,
+        "columna": "Scenario_Type",
+        "valor_original": "Exam",
+        "valor_contaminado": "'\\tExam\\t'",
+        "problema": "Espacios extra o caracteres especiales"
+      },
+      {
+        "indice": 27,
+        "columna": "Scenario_Type",
+        "valor_original": "Exam",
+        "valor_contaminado": "'Exam\\t'",
+        "problema": "Espacios extra o caracteres especiales"
+      },
+      {
+        "indice": 283,
+        "columna": "Scenario_Type",
+        "valor_original": "Emergency",
+        "valor_contaminado": "'*Emergency*'",
+        "problema": "Espacios extra o caracteres especiales"
+      },
+      {
+        "indice": 149,
+        "columna": "Scenario_Type",
+        "valor_original": "Emergency",
+        "valor_contaminado": "'*Emergency*'",
+        "problema": "Espacios extra o caracteres especiales"
+      },
+      {
+        "indice": 251,
+        "columna": "Scenario_Type",
+        "valor_original": "Emergency",
+        "valor_contaminado": "'\\tEmergency\\t'",
+        "problema": "Espacios extra o caracteres especiales"
+      },
+      {
+        "indice": 52,
+        "columna": "Scenario_Type",
+        "valor_original": " Interview",
+        "valor_contaminado": "'* Interview*'",
+        "problema": "Espacios extra o caracteres especiales"
+      },
+      {
+        "indice": 6,
+        "columna": "Scenario_Type",
+        "valor_original": "Emergency",
+        "valor_contaminado": "'Emergency '",
+        "problema": "Espacios extra o caracteres especiales"
+      },
+      {
+        "indice": 293,
+        "columna": "Scenario_Type",
+        "valor_original": "Interview",
+        "valor_contaminado": "'\\tInterview\\t'",
+        "problema": "Espacios extra o caracteres especiales"
+      },
+      {
+        "indice": 145,
+        "columna": "Scenario_Type",
+        "valor_original": "Exam",
+        "valor_contaminado": "'*Exam*'",
+        "problema": "Espacios extra o caracteres especiales"
+      },
+      {
+        "indice": 240,
+        "columna": "Scenario_Type",
+        "valor_original": "Exam",
+        "valor_contaminado": "'Exam\\t'",
+        "problema": "Espacios extra o caracteres especiales"
+      },
+      {
+        "indice": 245,
+        "columna": "Scenario_Type",
+        "valor_original": "Exam",
+        "valor_contaminado": "'Exam\\t'",
+        "problema": "Espacios extra o caracteres especiales"
+      },
+      {
+        "indice": 225,
+        "columna": "Scenario_Type",
+        "valor_original": "Emergency",
+        "valor_contaminado": "'Emergency\\t'",
+        "problema": "Espacios extra o caracteres especiales"
+      },
+      {
+        "indice": 174,
+        "columna": "Scenario_Type",
+        "valor_original": "interview",
+        "valor_contaminado": "'  interview  '",
+        "problema": "Espacios extra o caracteres especiales"
+      },
+      {
+        "indice": 94,
+        "columna": "Scenario_Type",
+        "valor_original": "Exam",
+        "valor_contaminado": "'\\tExam\\t'",
+        "problema": "Espacios extra o caracteres especiales"
+      },
+      {
+        "indice": 26,
+        "columna": "Scenario_Type",
+        "valor_original": "Emergency",
+        "valor_contaminado": "'*Emergency*'",
+        "problema": "Espacios extra o caracteres especiales"
+      },
+      {
+        "indice": 129,
+        "columna": "Scenario_Type",
+        "valor_original": "Emergency",
+        "valor_contaminado": "'Emergency\\t'",
+        "problema": "Espacios extra o caracteres especiales"
+      },
+      {
+        "indice": 244,
+        "columna": "Scenario_Type",
+        "valor_original": "Interview",
+        "valor_contaminado": "'  Interview  '",
+        "problema": "Espacios extra o caracteres especiales"
+      }
+    ]
+  }
+}

@@ -1,0 +1,910 @@
+{
+  "caso1_normalizacion_categorias": {
+    "descripcion": "Problemas de normalización en categorías (mayúsculas, espacios, guiones)",
+    "columnas_afectadas": [
+      "Property_Type",
+      "Condition"
+    ],
+    "total_problemas": 240,
+    "problemas": [
+      {
+        "indice": 228,
+        "columna": "Property_Type",
+        "valor_original": "Apartment",
+        "valor_contaminado": "Apartment "
+      },
+      {
+        "indice": 51,
+        "columna": "Property_Type",
+        "valor_original": "Penthouse",
+        "valor_contaminado": " Studio "
+      },
+      {
+        "indice": 563,
+        "columna": "Property_Type",
+        "valor_original": "Penthouse",
+        "valor_contaminado": "penthouse"
+      },
+      {
+        "indice": 501,
+        "columna": "Property_Type",
+        "valor_original": "Loft",
+        "valor_contaminado": " Penthouse "
+      },
+      {
+        "indice": 457,
+        "columna": "Property_Type",
+        "valor_original": "Studio",
+        "valor_contaminado": "studio"
+      },
+      {
+        "indice": 285,
+        "columna": "Property_Type",
+        "valor_original": "Penthouse",
+        "valor_contaminado": " Apartment "
+      },
+      {
+        "indice": 209,
+        "columna": "Property_Type",
+        "valor_original": "Penthouse",
+        "valor_contaminado": "loft"
+      },
+      {
+        "indice": 1116,
+        "columna": "Property_Type",
+        "valor_original": "Loft",
+        "valor_contaminado": "STUDIO"
+      },
+      {
+        "indice": 178,
+        "columna": "Property_Type",
+        "valor_original": "Apartment",
+        "valor_contaminado": " Penthouse"
+      },
+      {
+        "indice": 864,
+        "columna": "Property_Type",
+        "valor_original": "Apartment",
+        "valor_contaminado": "penthouse"
+      },
+      {
+        "indice": 65,
+        "columna": "Property_Type",
+        "valor_original": "Loft",
+        "valor_contaminado": "APARTMENT"
+      },
+      {
+        "indice": 61,
+        "columna": "Property_Type",
+        "valor_original": "Loft",
+        "valor_contaminado": " Penthouse "
+      },
+      {
+        "indice": 191,
+        "columna": "Property_Type",
+        "valor_original": "Apartment",
+        "valor_contaminado": "LOFT"
+      },
+      {
+        "indice": 447,
+        "columna": "Property_Type",
+        "valor_original": "Loft",
+        "valor_contaminado": "PENTHOUSE"
+      },
+      {
+        "indice": 476,
+        "columna": "Property_Type",
+        "valor_original": "Loft",
+        "valor_contaminado": "APARTMENT"
+      },
+      {
+        "indice": 1034,
+        "columna": "Property_Type",
+        "valor_original": "Loft",
+        "valor_contaminado": "Apartment "
+      },
+      {
+        "indice": 54,
+        "columna": "Property_Type",
+        "valor_original": "Apartment",
+        "valor_contaminado": "loft"
+      },
+      {
+        "indice": 1149,
+        "columna": "Property_Type",
+        "valor_original": "Penthouse",
+        "valor_contaminado": " Studio "
+      },
+      {
+        "indice": 407,
+        "columna": "Property_Type",
+        "valor_original": "Loft",
+        "valor_contaminado": " Studio"
+      },
+      {
+        "indice": 859,
+        "columna": "Property_Type",
+        "valor_original": "Studio",
+        "valor_contaminado": "apartment"
+      }
+    ]
+  },
+  "caso2_validacion_rangos": {
+    "descripcion": "Valores numéricos fuera de rangos válidos o lógicos",
+    "columnas_afectadas": [
+      "Arrondissement",
+      "Size_sqm",
+      "Rooms",
+      "Floor",
+      "Year_Built",
+      "Distance_to_Center_km",
+      "Price_EUR"
+    ],
+    "total_problemas": 840,
+    "problemas": [
+      {
+        "indice": 149,
+        "columna": "Arrondissement",
+        "valor_original": 16.0,
+        "valor_contaminado": -10.0,
+        "problema": "Valor fuera de rango en Arrondissement"
+      },
+      {
+        "indice": 932,
+        "columna": "Arrondissement",
+        "valor_original": 20.0,
+        "valor_contaminado": -10.0,
+        "problema": "Valor fuera de rango en Arrondissement"
+      },
+      {
+        "indice": 848,
+        "columna": "Arrondissement",
+        "valor_original": 18.0,
+        "valor_contaminado": -10.0,
+        "problema": "Valor fuera de rango en Arrondissement"
+      },
+      {
+        "indice": 1178,
+        "columna": "Arrondissement",
+        "valor_original": 19.0,
+        "valor_contaminado": -10.0,
+        "problema": "Valor fuera de rango en Arrondissement"
+      },
+      {
+        "indice": 398,
+        "columna": "Arrondissement",
+        "valor_original": 1.0,
+        "valor_contaminado": -10.0,
+        "problema": "Valor fuera de rango en Arrondissement"
+      },
+      {
+        "indice": 786,
+        "columna": "Arrondissement",
+        "valor_original": 4.0,
+        "valor_contaminado": -10.0,
+        "problema": "Valor fuera de rango en Arrondissement"
+      },
+      {
+        "indice": 1012,
+        "columna": "Arrondissement",
+        "valor_original": 15.0,
+        "valor_contaminado": -10.0,
+        "problema": "Valor fuera de rango en Arrondissement"
+      },
+      {
+        "indice": 818,
+        "columna": "Arrondissement",
+        "valor_original": 8.0,
+        "valor_contaminado": 200,
+        "problema": "Valor fuera de rango en Arrondissement"
+      },
+      {
+        "indice": 499,
+        "columna": "Arrondissement",
+        "valor_original": 10.0,
+        "valor_contaminado": -10.0,
+        "problema": "Valor fuera de rango en Arrondissement"
+      },
+      {
+        "indice": 302,
+        "columna": "Arrondissement",
+        "valor_original": 10.0,
+        "valor_contaminado": -10.0,
+        "problema": "Valor fuera de rango en Arrondissement"
+      },
+      {
+        "indice": 11,
+        "columna": "Arrondissement",
+        "valor_original": 12.0,
+        "valor_contaminado": 200,
+        "problema": "Valor fuera de rango en Arrondissement"
+      },
+      {
+        "indice": 218,
+        "columna": "Arrondissement",
+        "valor_original": 18.0,
+        "valor_contaminado": 200,
+        "problema": "Valor fuera de rango en Arrondissement"
+      },
+      {
+        "indice": 870,
+        "columna": "Arrondissement",
+        "valor_original": 10.0,
+        "valor_contaminado": 200,
+        "problema": "Valor fuera de rango en Arrondissement"
+      },
+      {
+        "indice": 448,
+        "columna": "Arrondissement",
+        "valor_original": 2.0,
+        "valor_contaminado": -10.0,
+        "problema": "Valor fuera de rango en Arrondissement"
+      },
+      {
+        "indice": 360,
+        "columna": "Arrondissement",
+        "valor_original": 20.0,
+        "valor_contaminado": -10.0,
+        "problema": "Valor fuera de rango en Arrondissement"
+      },
+      {
+        "indice": 1060,
+        "columna": "Arrondissement",
+        "valor_original": 8.0,
+        "valor_contaminado": -10.0,
+        "problema": "Valor fuera de rango en Arrondissement"
+      },
+      {
+        "indice": 951,
+        "columna": "Arrondissement",
+        "valor_original": 6.0,
+        "valor_contaminado": 200,
+        "problema": "Valor fuera de rango en Arrondissement"
+      },
+      {
+        "indice": 102,
+        "columna": "Arrondissement",
+        "valor_original": 2.0,
+        "valor_contaminado": -10.0,
+        "problema": "Valor fuera de rango en Arrondissement"
+      },
+      {
+        "indice": 1141,
+        "columna": "Arrondissement",
+        "valor_original": 10.0,
+        "valor_contaminado": -10.0,
+        "problema": "Valor fuera de rango en Arrondissement"
+      },
+      {
+        "indice": 510,
+        "columna": "Arrondissement",
+        "valor_original": 15.0,
+        "valor_contaminado": 200,
+        "problema": "Valor fuera de rango en Arrondissement"
+      }
+    ]
+  },
+  "caso3_outliers": {
+    "descripcion": "Outliers estadísticamente extremos pero técnicamente posibles",
+    "columnas_afectadas": [
+      "Arrondissement",
+      "Size_sqm",
+      "Rooms",
+      "Floor",
+      "Year_Built",
+      "Distance_to_Center_km",
+      "Price_EUR"
+    ],
+    "total_problemas": 119,
+    "problemas": [
+      {
+        "indice": 416,
+        "columna": "Arrondissement",
+        "valor_original": 11.0,
+        "valor_contaminado": 186.44,
+        "problema": "Outlier estadístico"
+      },
+      {
+        "indice": 676,
+        "columna": "Arrondissement",
+        "valor_original": 19.0,
+        "valor_contaminado": 192.61,
+        "problema": "Outlier estadístico"
+      },
+      {
+        "indice": 161,
+        "columna": "Arrondissement",
+        "valor_original": 10.0,
+        "valor_contaminado": -115.0,
+        "problema": "Outlier estadístico"
+      },
+      {
+        "indice": 921,
+        "columna": "Arrondissement",
+        "valor_original": 200.0,
+        "valor_contaminado": 221.29,
+        "problema": "Outlier estadístico"
+      },
+      {
+        "indice": 759,
+        "columna": "Arrondissement",
+        "valor_original": 15.0,
+        "valor_contaminado": 222.14,
+        "problema": "Outlier estadístico"
+      },
+      {
+        "indice": 189,
+        "columna": "Arrondissement",
+        "valor_original": 9.0,
+        "valor_contaminado": 218.29,
+        "problema": "Outlier estadístico"
+      },
+      {
+        "indice": 1096,
+        "columna": "Arrondissement",
+        "valor_original": 18.0,
+        "valor_contaminado": -115.0,
+        "problema": "Outlier estadístico"
+      },
+      {
+        "indice": 390,
+        "columna": "Arrondissement",
+        "valor_original": 2.0,
+        "valor_contaminado": -115.0,
+        "problema": "Outlier estadístico"
+      },
+      {
+        "indice": 105,
+        "columna": "Arrondissement",
+        "valor_original": 6.0,
+        "valor_contaminado": 203.28,
+        "problema": "Outlier estadístico"
+      },
+      {
+        "indice": 549,
+        "columna": "Arrondissement",
+        "valor_original": 12.0,
+        "valor_contaminado": -115.0,
+        "problema": "Outlier estadístico"
+      },
+      {
+        "indice": 772,
+        "columna": "Arrondissement",
+        "valor_original": 19.0,
+        "valor_contaminado": -115.0,
+        "problema": "Outlier estadístico"
+      },
+      {
+        "indice": 80,
+        "columna": "Arrondissement",
+        "valor_original": 2.0,
+        "valor_contaminado": 225.31,
+        "problema": "Outlier estadístico"
+      },
+      {
+        "indice": 149,
+        "columna": "Arrondissement",
+        "valor_original": -10.0,
+        "valor_contaminado": -115.0,
+        "problema": "Outlier estadístico"
+      },
+      {
+        "indice": 385,
+        "columna": "Arrondissement",
+        "valor_original": 3.0,
+        "valor_contaminado": -115.0,
+        "problema": "Outlier estadístico"
+      },
+      {
+        "indice": 1144,
+        "columna": "Arrondissement",
+        "valor_original": -10.0,
+        "valor_contaminado": 175.76,
+        "problema": "Outlier estadístico"
+      },
+      {
+        "indice": 444,
+        "columna": "Arrondissement",
+        "valor_original": 3.0,
+        "valor_contaminado": -115.0,
+        "problema": "Outlier estadístico"
+      },
+      {
+        "indice": 981,
+        "columna": "Arrondissement",
+        "valor_original": 10.0,
+        "valor_contaminado": 208.98,
+        "problema": "Outlier estadístico"
+      },
+      {
+        "indice": 855,
+        "columna": "Size_sqm",
+        "valor_original": 100.0,
+        "valor_contaminado": -1144.25,
+        "problema": "Outlier estadístico"
+      },
+      {
+        "indice": 604,
+        "columna": "Size_sqm",
+        "valor_original": 96.0,
+        "valor_contaminado": 1809.44,
+        "problema": "Outlier estadístico"
+      },
+      {
+        "indice": 312,
+        "columna": "Size_sqm",
+        "valor_original": 178.0,
+        "valor_contaminado": 1838.12,
+        "problema": "Outlier estadístico"
+      }
+    ]
+  },
+  "caso4_consistencia": {
+    "descripcion": "No se encontraron pares de columnas relacionadas",
+    "total_problemas": 0,
+    "problemas": []
+  },
+  "caso5_valores_faltantes": {
+    "descripcion": "Valores faltantes (vacíos, N/A, NULL, etc.)",
+    "columnas_afectadas": [
+      "Arrondissement",
+      "Property_Type",
+      "Size_sqm",
+      "Rooms",
+      "Floor",
+      "Year_Built",
+      "Condition",
+      "Distance_to_Center_km",
+      "Price_EUR"
+    ],
+    "total_problemas": 117,
+    "problemas": [
+      {
+        "indice": 873,
+        "columna": "Arrondissement",
+        "valor_original": -10.0,
+        "valor_faltante": "",
+        "problema": "Valor faltante representado como: ''"
+      },
+      {
+        "indice": 946,
+        "columna": "Arrondissement",
+        "valor_original": 14.0,
+        "valor_faltante": "NaN",
+        "problema": "Valor faltante representado como: 'NaN'"
+      },
+      {
+        "indice": 474,
+        "columna": "Arrondissement",
+        "valor_original": 10.0,
+        "valor_faltante": "NaN",
+        "problema": "Valor faltante representado como: 'NaN'"
+      },
+      {
+        "indice": 829,
+        "columna": "Arrondissement",
+        "valor_original": 19.0,
+        "valor_faltante": "null",
+        "problema": "Valor faltante representado como: 'null'"
+      },
+      {
+        "indice": 377,
+        "columna": "Arrondissement",
+        "valor_original": 20.0,
+        "valor_faltante": "N/A",
+        "problema": "Valor faltante representado como: 'N/A'"
+      },
+      {
+        "indice": 381,
+        "columna": "Arrondissement",
+        "valor_original": 11.0,
+        "valor_faltante": "N/A",
+        "problema": "Valor faltante representado como: 'N/A'"
+      },
+      {
+        "indice": 885,
+        "columna": "Arrondissement",
+        "valor_original": 19.0,
+        "valor_faltante": "NULL",
+        "problema": "Valor faltante representado como: 'NULL'"
+      },
+      {
+        "indice": 810,
+        "columna": "Arrondissement",
+        "valor_original": 11.0,
+        "valor_faltante": "na",
+        "problema": "Valor faltante representado como: 'na'"
+      },
+      {
+        "indice": 59,
+        "columna": "Arrondissement",
+        "valor_original": 200.0,
+        "valor_faltante": "na",
+        "problema": "Valor faltante representado como: 'na'"
+      },
+      {
+        "indice": 404,
+        "columna": "Arrondissement",
+        "valor_original": 11.0,
+        "valor_faltante": "NaN",
+        "problema": "Valor faltante representado como: 'NaN'"
+      },
+      {
+        "indice": 920,
+        "columna": "Arrondissement",
+        "valor_original": 20.0,
+        "valor_faltante": "-",
+        "problema": "Valor faltante representado como: '-'"
+      },
+      {
+        "indice": 879,
+        "columna": "Arrondissement",
+        "valor_original": 4.0,
+        "valor_faltante": "N/A",
+        "problema": "Valor faltante representado como: 'N/A'"
+      },
+      {
+        "indice": 796,
+        "columna": "Arrondissement",
+        "valor_original": 200.0,
+        "valor_faltante": "null",
+        "problema": "Valor faltante representado como: 'null'"
+      },
+      {
+        "indice": 1002,
+        "columna": "Property_Type",
+        "valor_original": "Penthouse",
+        "valor_faltante": "na",
+        "problema": "Valor faltante representado como: 'na'"
+      },
+      {
+        "indice": 1080,
+        "columna": "Property_Type",
+        "valor_original": "Studio",
+        "valor_faltante": "N/A",
+        "problema": "Valor faltante representado como: 'N/A'"
+      },
+      {
+        "indice": 641,
+        "columna": "Property_Type",
+        "valor_original": "Penthouse",
+        "valor_faltante": "NaN",
+        "problema": "Valor faltante representado como: 'NaN'"
+      },
+      {
+        "indice": 795,
+        "columna": "Property_Type",
+        "valor_original": "Studio",
+        "valor_faltante": "null",
+        "problema": "Valor faltante representado como: 'null'"
+      },
+      {
+        "indice": 803,
+        "columna": "Property_Type",
+        "valor_original": "Apartment",
+        "valor_faltante": "N/A",
+        "problema": "Valor faltante representado como: 'N/A'"
+      },
+      {
+        "indice": 233,
+        "columna": "Property_Type",
+        "valor_original": "Apartment",
+        "valor_faltante": "NULL",
+        "problema": "Valor faltante representado como: 'NULL'"
+      },
+      {
+        "indice": 712,
+        "columna": "Property_Type",
+        "valor_original": "Loft",
+        "valor_faltante": "na",
+        "problema": "Valor faltante representado como: 'na'"
+      }
+    ]
+  },
+  "caso6_tipos_datos": {
+    "descripcion": "Valores numéricos representados como texto",
+    "columnas_afectadas": [
+      "Arrondissement",
+      "Size_sqm",
+      "Rooms",
+      "Floor",
+      "Year_Built",
+      "Distance_to_Center_km",
+      "Price_EUR"
+    ],
+    "total_problemas": 119,
+    "problemas": [
+      {
+        "indice": 310,
+        "columna": "Arrondissement",
+        "valor_original": 20.0,
+        "valor_texto": "N/D",
+        "problema": "Valor numérico como texto: N/D"
+      },
+      {
+        "indice": 843,
+        "columna": "Arrondissement",
+        "valor_original": 6.0,
+        "valor_texto": "N/D",
+        "problema": "Valor numérico como texto: N/D"
+      },
+      {
+        "indice": 906,
+        "columna": "Arrondissement",
+        "valor_original": 200.0,
+        "valor_texto": "doce",
+        "problema": "Valor numérico como texto: doce"
+      },
+      {
+        "indice": 444,
+        "columna": "Arrondissement",
+        "valor_original": -115.0,
+        "valor_texto": "N/D",
+        "problema": "Valor numérico como texto: N/D"
+      },
+      {
+        "indice": 177,
+        "columna": "Arrondissement",
+        "valor_original": 14.0,
+        "valor_texto": "treinta y dos",
+        "problema": "Valor numérico como texto: treinta y dos"
+      },
+      {
+        "indice": 205,
+        "columna": "Arrondissement",
+        "valor_original": 15.0,
+        "valor_texto": "nueve",
+        "problema": "Valor numérico como texto: nueve"
+      },
+      {
+        "indice": 286,
+        "columna": "Arrondissement",
+        "valor_original": 10.0,
+        "valor_texto": "doce",
+        "problema": "Valor numérico como texto: doce"
+      },
+      {
+        "indice": 252,
+        "columna": "Arrondissement",
+        "valor_original": 3.0,
+        "valor_texto": "veinte",
+        "problema": "Valor numérico como texto: veinte"
+      },
+      {
+        "indice": 786,
+        "columna": "Arrondissement",
+        "valor_original": -10.0,
+        "valor_texto": "n/a",
+        "problema": "Valor numérico como texto: n/a"
+      },
+      {
+        "indice": 719,
+        "columna": "Arrondissement",
+        "valor_original": 14.0,
+        "valor_texto": "treinta y dos",
+        "problema": "Valor numérico como texto: treinta y dos"
+      },
+      {
+        "indice": 879,
+        "columna": "Arrondissement",
+        "valor_original": "N/A",
+        "valor_texto": "ocho horas",
+        "problema": "Valor numérico como texto: ocho horas"
+      },
+      {
+        "indice": 644,
+        "columna": "Arrondissement",
+        "valor_original": 16.0,
+        "valor_texto": "seven",
+        "problema": "Valor numérico como texto: seven"
+      },
+      {
+        "indice": 507,
+        "columna": "Arrondissement",
+        "valor_original": 8.0,
+        "valor_texto": "N/D",
+        "problema": "Valor numérico como texto: N/D"
+      },
+      {
+        "indice": 567,
+        "columna": "Arrondissement",
+        "valor_original": 200.0,
+        "valor_texto": "seven",
+        "problema": "Valor numérico como texto: seven"
+      },
+      {
+        "indice": 172,
+        "columna": "Arrondissement",
+        "valor_original": 8.0,
+        "valor_texto": "ocho horas",
+        "problema": "Valor numérico como texto: ocho horas"
+      },
+      {
+        "indice": 508,
+        "columna": "Arrondissement",
+        "valor_original": 5.0,
+        "valor_texto": "doce",
+        "problema": "Valor numérico como texto: doce"
+      },
+      {
+        "indice": 1133,
+        "columna": "Arrondissement",
+        "valor_original": 8.0,
+        "valor_texto": "five point two",
+        "problema": "Valor numérico como texto: five point two"
+      },
+      {
+        "indice": 605,
+        "columna": "Size_sqm",
+        "valor_original": 31.0,
+        "valor_texto": "twenty",
+        "problema": "Valor numérico como texto: twenty"
+      },
+      {
+        "indice": 111,
+        "columna": "Size_sqm",
+        "valor_original": 93.0,
+        "valor_texto": "seven",
+        "problema": "Valor numérico como texto: seven"
+      },
+      {
+        "indice": 490,
+        "columna": "Size_sqm",
+        "valor_original": 38.0,
+        "valor_texto": "n/a",
+        "problema": "Valor numérico como texto: n/a"
+      }
+    ]
+  },
+  "caso7_formato": {
+    "descripcion": "Problemas de formato (espacios extra, caracteres especiales)",
+    "columnas_afectadas": [
+      "Property_ID",
+      "Property_Type",
+      "Condition"
+    ],
+    "total_problemas": 360,
+    "problemas": [
+      {
+        "indice": 1007,
+        "columna": "Property_ID",
+        "valor_original": "P11007",
+        "valor_contaminado": "'P11007\\t'",
+        "problema": "Espacios extra o caracteres especiales"
+      },
+      {
+        "indice": 122,
+        "columna": "Property_ID",
+        "valor_original": "P10122",
+        "valor_contaminado": "' P10122'",
+        "problema": "Espacios extra o caracteres especiales"
+      },
+      {
+        "indice": 291,
+        "columna": "Property_ID",
+        "valor_original": "P10291",
+        "valor_contaminado": "' P10291'",
+        "problema": "Espacios extra o caracteres especiales"
+      },
+      {
+        "indice": 573,
+        "columna": "Property_ID",
+        "valor_original": "P10573",
+        "valor_contaminado": "'  P10573  '",
+        "problema": "Espacios extra o caracteres especiales"
+      },
+      {
+        "indice": 190,
+        "columna": "Property_ID",
+        "valor_original": "P10190",
+        "valor_contaminado": "'P10190\\t'",
+        "problema": "Espacios extra o caracteres especiales"
+      },
+      {
+        "indice": 89,
+        "columna": "Property_ID",
+        "valor_original": "P10089",
+        "valor_contaminado": "'P10089 '",
+        "problema": "Espacios extra o caracteres especiales"
+      },
+      {
+        "indice": 474,
+        "columna": "Property_ID",
+        "valor_original": "P10474",
+        "valor_contaminado": "'P10474\\t'",
+        "problema": "Espacios extra o caracteres especiales"
+      },
+      {
+        "indice": 1064,
+        "columna": "Property_ID",
+        "valor_original": "P11064",
+        "valor_contaminado": "'P11064 '",
+        "problema": "Espacios extra o caracteres especiales"
+      },
+      {
+        "indice": 845,
+        "columna": "Property_ID",
+        "valor_original": "P10845",
+        "valor_contaminado": "'[P10845]'",
+        "problema": "Espacios extra o caracteres especiales"
+      },
+      {
+        "indice": 762,
+        "columna": "Property_ID",
+        "valor_original": "P10762",
+        "valor_contaminado": "'\\tP10762\\t'",
+        "problema": "Espacios extra o caracteres especiales"
+      },
+      {
+        "indice": 938,
+        "columna": "Property_ID",
+        "valor_original": "P10938",
+        "valor_contaminado": "'*P10938*'",
+        "problema": "Espacios extra o caracteres especiales"
+      },
+      {
+        "indice": 173,
+        "columna": "Property_ID",
+        "valor_original": "P10173",
+        "valor_contaminado": "'P10173 '",
+        "problema": "Espacios extra o caracteres especiales"
+      },
+      {
+        "indice": 1189,
+        "columna": "Property_ID",
+        "valor_original": "P11189",
+        "valor_contaminado": "'[P11189]'",
+        "problema": "Espacios extra o caracteres especiales"
+      },
+      {
+        "indice": 195,
+        "columna": "Property_ID",
+        "valor_original": "P10195",
+        "valor_contaminado": "'\\tP10195\\t'",
+        "problema": "Espacios extra o caracteres especiales"
+      },
+      {
+        "indice": 1035,
+        "columna": "Property_ID",
+        "valor_original": "P11035",
+        "valor_contaminado": "'*P11035*'",
+        "problema": "Espacios extra o caracteres especiales"
+      },
+      {
+        "indice": 273,
+        "columna": "Property_ID",
+        "valor_original": "P10273",
+        "valor_contaminado": "'\\tP10273\\t'",
+        "problema": "Espacios extra o caracteres especiales"
+      },
+      {
+        "indice": 807,
+        "columna": "Property_ID",
+        "valor_original": "P10807",
+        "valor_contaminado": "' P10807'",
+        "problema": "Espacios extra o caracteres especiales"
+      },
+      {
+        "indice": 153,
+        "columna": "Property_ID",
+        "valor_original": "P10153",
+        "valor_contaminado": "'P10153\\t'",
+        "problema": "Espacios extra o caracteres especiales"
+      },
+      {
+        "indice": 1162,
+        "columna": "Property_ID",
+        "valor_original": "P11162",
+        "valor_contaminado": "'\\tP11162\\t'",
+        "problema": "Espacios extra o caracteres especiales"
+      },
+      {
+        "indice": 127,
+        "columna": "Property_ID",
+        "valor_original": "P10127",
+        "valor_contaminado": "'[P10127]'",
+        "problema": "Espacios extra o caracteres especiales"
+      }
+    ]
+  }
+}

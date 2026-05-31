@@ -1,0 +1,301 @@
+Scenario_Type,Time_Limit,Stress_Level,Decision_Taken,Decision_Quality,Age,Experience_Level,Heart_Rate,Decision_Time_Taken
+Exam,23.0,Medium,CALL FOR HELP,Low,200.0,Expert,75.0,10.0
+Emergency,25.0,High	,Hesitation ,Medium,25.0,Beginner ,79.0,25.0
+Emergency,14.0,High,Guess Answer,High,31.0,Beginner,1400.0,7.0
+ Emergency ,42.0,Low,Logical Answer,High ,31.0,Beginner,139.0,33.0
+Interview,30.5,Low,Hesitation,Medium,26.0,Expert,109.0,25.0
+Emergency,41.0,Low, Logical Answer ,Low,31.0,Intermediate,92.0,33.0
+Emergency ,20.0,High,Quick Decision,Low,32.0,Intermediate,105.0,15.0
+Interview,30.0,Low,Hesitation,*High*,39.0,  Intermediate ,139.0,15.0
+Emergency,20.0,Very High,Guess Answer,High,28.0,Beginner,119.0,6.0
+Emergency,42.0,Medium,Hesitation,Medium,26.0,Beginner,103.0,39.0
+Emergency,45.0,Very High,  Panic Reaction  ,MEDIUM,34.0,Expert,104.0,-36.5
+Interview,42.0,High,Call for Help,Medium,20.0,Expert,76.0,37.0
+EMERGENCY,38.0,Very High,Panic Reaction,High,36.0,Intermediate,-70.0,18.0
+ Exam ,13.0,Very High,Hesitation,Low,31.0,Intermediate,110.0,9.0
+Emergency,50.0,High,Logical Answer,	High	,200.0,Expert,134.0,19.0
+exam,20.0,Medium,Structured Answer,High,28.0,Beginner,123.0,-34.32
+Emergency ,26.0,  Medium   ,Panic Reaction,HIGH,38.0,Expert,98.0,11.0
+Exam,28.0,Low,Logical Answer,Medium,33.0,Intermediate,94.0,25.0
+Exam,18.0,Very High,  Hesitation  ,Low,35.0,[Expert],138.0,-5.0
+Exam,25.0,High,Confident Response,High,200.0,Beginner,121.0,14.0
+Exam,30.5,Medium,	Logical Answer	,High,25.0,Beginner,125.0,67.54
+Interview,32.0,Low,Call for Help,Medium,26.0,Intermediate,71.0,30.5
+Exam,27.0,Very High,Guess Answer,High,200.0,	Intermediate	,98.0,48.0
+	Exam	,11.0,Very High,Call for Help,High,31.0,Intermediate,1400.0,6.0
+Interview,40.0,Low,Panic Reaction,Low,39.0,Expert,119.0,6.0
+Emergency,-37.5,Low,Quick Decision,Low,23.0,Expert ,138.0,28.0
+*Emergency*,52.0,Low,Panic Reaction,Medium,29.0,Intermediate,74.0,13.0
+Exam	,26.0,Low,Structured Answer,High,18.0,Expert,75.0,9.0
+Exam,52.0, Medium,Logical Answer,High,19.0,Expert,86.0,40.0
+Emergency,49.0,Low,Panic Reaction,Low,29.0,Expert,105.0,15.0
+Interview,49.0,Very High ,Confident Response,LOW,19.0, Intermediate,127.0,20.0
+Emergency,30.0,Very High,Structured Answer,Low,26.0,Beginner,104.0,16.0
+Exam,13.0,Medium,Quick Decision,HIGH,216.17,Intermediate,93.0,12.0
+*Exam*,58.0, Very High ,Quick Decision,Low,39.0,Expert,137.0,21.0
+Emergency,30.5,Very High,Quick Decision,HIGH,25.0,Intermediate,122.0,44.0
+Exam,25.0,Low,Hesitation,High,0.0,Beginner,94.0,28.0
+Interview,59.0, Very High ,Panic Reaction,high,22.0,Expert,138.0,14.0
+*Exam*,48.0,Medium,Logical Answer,High,28.0,Intermediate,-70.0,12.0
+Interview,17.0, Very High,Confident Response,High,29.0,   Intermediate  ,83.0,25.0
+Interview,60.0,Medium,Panic Reaction,Low,31.0,Expert,129.0,50.0
+Exam,59.0,LOW,Confident Response,High,19.0,Expert,93.0,58.0
+Interview,25.0,[Medium],Structured Answer,High,22.0,Expert,89.0,40.0
+Interview,28.0,Low,Structured Answer,High,32.0,Expert,140.0,6.0
+Interview ,34.0,Low,Guess Answer,High,twelve,Intermediate,-70.0,32.0
+interview,42.0,High,Logical Answer,Medium,25.0,Beginner,103.0,37.0
+Exam,28.0,Low,Confident Response ,High,23.0,Intermediate,136.0,5.0
+Emergency,42.0,Very High,Confident Response	,Medium,20.0,Intermediate,136.0,26.0
+ Interview ,31.0,Low,Logical Answer,	High	,27.0,beginner,-70.0,21.0
+Interview,48.0,Medium,Panic Reaction,Low,21.0,Beginner,94.0,39.0
+Emergency,49.0,High,Confident Response,High,31.0,Expert,99.0,15.0
+Emergency,42.0,Low,Logical Answer,Low,34.0, Expert ,91.0,24.0
+Emergency,-5.0,VERY HIGH,Quick Decision,Medium,29.0,*Beginner*,121.0,veinte
+* Interview*,,Low,Structured Answer,Medium,26.0,Beginner,93.0,13.0
+Exam,50.0,Medium,*Call for Help*,Medium,19.0,Intermediate,114.0,35.0
+Emergency,50.0,High,-,High,35.0,Beginner,1400.0,48.0
+Emergency,27.0,Low,Quick Decision,Low,200.0,Expert,96.0,17.0
+Interview,50.0,Medium,Call for Help,Low,18.0,Intermediate,81.0,17.0
+exam,36.0,High,HESITATION,Medium,20.0,Expert,140.0,30.5
+*Emergency*,46.0,[Low],LOGICAL ANSWER,  Low  ,32.0,Expert,124.0,28.0
+Exam,47.0,Very High,Call for Help,High,150.0,Beginner,122.0,37.0
+Exam,17.0,Low,Structured Answer,  High  ,29.0,Beginner,132.0,13.0
+Interview,doce,Very High,Confident Response,Low ,18.0,Expert,120.0,25.0
+Exam,23.0,High,Panic Reaction,	Medium	,26.0,Expert,80.0,23.0
+Interview,19.0,Medium,Logical Answer,High,28.0,Expert,92.0,18.0
+ Interview,47.0,Very High,Guess Answer,Low,37.0,	Beginner	,99.0,34.0
+Emergency,37.0,Medium,Guess Answer,Medium,21.0,Expert,94.0,30.5
+Exam,19.0,High,Structured Answer,Medium,26.0,Beginner,101.0,25.0
+Exam,30.5,Medium,Guess Answer,High ,29.0,Expert,83.0,22.0
+Exam,57.0,Very High,Confident Response,Medium,28.0,Intermediate,125.0,7.0
+Emergency,10.0,Very High,Call for Help,	Medium	,27.0,Intermediate,80.0,10.0
+Exam,34.0,High,Confident Response,Medium,20.0,Intermediate,122.0,34.0
+ Exam ,43.0,Low,Logical Answer,Low,36.0,beginner,101.0,18.0
+Exam,44.0, Very High,Logical Answer,High,21.0,Expert,128.0,28.0
+Interview,47.0,High,Quick Decision,Low,32.0,Intermediate ,96.0,21.0
+Exam,49.0,Low,Quick Decision,  Medium  ,29.0,Intermediate,73.0,42.0
+Exam,49.0,Very High,Quick Decision,Medium,21.0,Expert,1400.0,25.0
+	Emergency	,51.0,  Low  ,Guess Answer,Low,30.0,Expert,91.0,-5.0
+ Exam,60.0,Very High,Hesitation,High,37.0,  Beginner  ,121.0,31.0
+Exam,24.0,Medium,Call For Help,	null	,-100.0,Intermediate,78.0,80.72
+exam,51.0,Very High,Guess Answer,Low,31.0,[Expert],139.0,19.0
+Emergency,34.0,	Very High	, Panic Reaction ,Medium,25.0,Intermediate,80.0,16.0
+Exam ,17.0,Very High,Hesitation,Medium	,28.0,Beginner,140.0,14.0
+Interview,20.0,High,	 Structured Answer 	,High,22.0,Intermediate,94.0,48.0
+Exam,57.0, Medium ,Confident Response,Low,37.0,Intermediate,128.0,21.0
+Interview,24.0,[Medium],Call for Help,Medium,21.0,Intermediate ,110.0,24.0
+Interview,19.0,Very High,Logical Answer,Medium,26.0,EXPERT,79.0,15.0
+Exam,24.0,High,Guess Answer,Low,37.0,Beginner,103.0,8.0
+Interview,36.0,Low ,Panic Reaction,Medium,38.0,Expert,99.0,9.0
+Interview,46.0,  High  ,Confident Response,Low,32.0,Expert,90.0,14.0
+Exam,53.0,Medium,Quick Decision	,Medium,25.0,Expert,121.0,46.0
+Interview,59.0,Low,Panic Reaction,-,37.0,Intermediate,-70.0,41.0
+Emergency,57.0,Very High,CONFIDENT RESPONSE,Low,150.0,Intermediate,90.0,20.0
+Exam,25.0,High,[Hesitation],Low,28.0,Beginner,99.0,17.0
+Exam,-37.5,Very High,Hesitation,High,30.0, Beginner,na,13.0
+	Exam	,27.0,High,Structured Answer,Medium,24.0,Expert,79.0,12.0
+Emergency,30.5,Medium,Guess Answer,High,31.0,Expert,94.0,6.0
+Emergency,48.0,Low,Logical Answer,Medium,22.0,[Beginner],83.0,34.0
+Exam,26.0,Low,Quick Decision,*Medium*,200.0,Expert,132.0,7.0
+Exam,dieciocho,Very High,Quick Decision,High,22.0,Intermediate,86.0,ocho horas
+Exam,47.0,Low,Call for Help,Medium,26.0,Beginner,1400.0,34.0
+Exam,32.0,Very High,Hesitation,High,200.0,Intermediate,134.0,31.0
+INTERVIEW,37.0, Low,Confident Response ,Low,24.0,Expert,1400.0,36.0
+Emergency,60.0,Medium,Quick Decision,Low,33.0,Expert,103.0,68.33
+Exam,36.0,Low,Guess Answer,High,26.0,Intermediate,131.0,35.0
+Emergency,-5.0,High,Guess Answer,High,40.0,Beginner,106.0,9.0
+Exam,34.0,High,Confident Response,High,21.0,Expert,83.0,28.0
+Interview,11.0,Medium,Confident Response,Medium,28.0,Intermediate,82.0,11.0
+Emergency,11.0, Very High,Guess Answer,Low,19.0,Beginner,110.0,48.0
+Exam,89.45, Medium,Guess Answer,Medium,39.0,Expert,97.0,8.0
+Exam,46.0,Low,Confident Response,MEDIUM,228.48,EXPERT,119.0,9.0
+EXAM,46.0,Medium,Call for Help,Low,37.0,Intermediate,77.0,treinta y dos
+emergency,10.0,Very High,Logical Answer,Low,33.0,Intermediate,122.0,9.0
+ Interview ,32.0,very high,Confident Response, Medium,21.0,Expert,1656.49,30.0
+Exam,47.0,Very High,Call for Help,Medium,36.0,Beginner,108.0,38.0
+ Emergency ,59.0,High,Guess Answer,Low,34.0,Beginner,72.0,34.0
+Exam,31.0,*Very High*,Logical Answer, low,29.0,Beginner,1400.0,29.0
+Interview,59.0,Very High,Quick Decision,High,33.0,Beginner,81.0,50.0
+Exam,20.0,medium,Panic Reaction,medium,35.0,Expert,104.0,18.0
+Exam,nueve,*Medium*,Panic Reaction,High,36.0,Beginner,137.0,22.0
+exam,48.0,*high*,Hesitation,Medium,37.0,	Beginner	,88.0,10.0
+Interview,-5.0,High,Call for Help,Medium,31.0,Beginner,1400.0,19.0
+Emergency,34.0,High,Guess Answer,LOW,32.0,Intermediate ,108.0,17.0
+Emergency,30.5,*Medium*,Confident Response,	High	,38.0,Expert	,121.0,-25.66
+Interview,36.0,Very High,Hesitation,High,nueve,Intermediate,88.0,20.0
+Interview,N/A,Medium,Structured Answer,*Low *,24.0,na,twenty,40.0
+EMERGENCY,21.0, Low,Guess Answer,Medium,37.0,Intermediate,1400.0,18.0
+Exam,25.0,High,Hesitation,low,34.0,Expert,127.0,78.44
+Emergency,59.0,Very High,Quick Decision,Medium,30.0,beginner,80.0,30.5
+Interview,seven,Medium, Hesitation,Low,18.0,Intermediate,134.0,11.0
+Emergency	,27.0,High,Logical Answer,Medium,18.0,Intermediate,123.0,22.0
+Interview,28.0,Low,Guess Answer,Low,150.0,Intermediate,129.0,5.0
+Emergency,17.0,Low,Structured Answer,Low,28.0,Expert,103.0,15.0
+Exam,49.0,Low,Guess Answer,Medium,31.0,Intermediate,125.0,null
+Interview,-37.33,Very High,Hesitation,Medium,200.0,Expert,133.0,11.0
+Emergency,45.0,Medium,Hesitation ,Medium,40.0,Expert,108.0,25.0
+Emergency,30.5,*Very High*,Call for Help,Low,5.0, Expert,98.0,14.0
+Emergency,23.0, High ,LOGICAL ANSWER,Medium,22.0,Beginner,138.0,22.0
+Interview,12.0,Low ,  Quick Decision  ,Low,N/A,Expert,107.0,9.0
+Exam,cinco punto tres, High,Call for Help,Medium,21.0,Expert,105.0,20.0
+Exam,28.0,Low,Panic Reaction,Low	,29.0,Beginner,1506.74,5.0
+*Interview *,49.0,High,Quick Decision,Medium,23.0,Beginner,95.0,18.0
+Emergency,33.0,Medium,Structured Answer,Low,21.0,Beginner,131.0,twenty
+EMERGENCY,45.0, Low , Confident Response,medium,200.0,Intermediate ,123.0,17.0
+Exam,30.0,Medium,Structured Answer,Medium,26.0,Expert,107.0,NaN
+Exam,16.0,Medium	,Guess Answer,High,27.0,Intermediate,97.0,treinta y dos
+*Exam*,33.0,High,Hesitation,High,22.0,Beginner,-70.0,8.0
+Exam,56.0,Medium,Panic Reaction,Medium,19.0,Expert,70.0,27.0
+Emergency,43.0,*High*,	Confident Response	,	High	,23.0,Intermediate,99.0,22.0
+Exam,28.0,Very High ,Panic Reaction,Medium,34.0,Intermediate,118.0,24.0
+*Emergency*,57.0,Low	,Panic Reaction,*Medium*,28.0,Intermediate,71.0,46.0
+Interview,11.0,Low,HESITATION,Medium,37.0,Expert,90.0,6.0
+Emergency,31.0,High,Confident Response,High,31.0,Beginner,108.0,10.0
+Exam,22.0,Medium,Structured Answer ,Low,31.0,Expert,98.0,22.0
+Exam,25.0,High,Call for Help,High,39.0,Intermediate,80.0,7.0
+Emergency,na,Very High,Quick Decision,High,21.0,Intermediate,117.0,23.0
+[Exam],60.0,Low,Confident Response,High,28.0,Beginner,90.0,50.0
+Emergency,doce,Low,Hesitation,High,32.0,Beginner,five point two,23.0
+Exam,44.0,	Very High	,Confident Response,Medium,36.0,Beginner,99.0,25.0
+Exam,33.0,High,Confident Response,Medium,36.0,Beginner,1400.0,17.0
+?,44.0,Medium,Quick Decision,  High  ,32.0,Beginner,74.0,35.0
+Exam,25.0,High,Structured Answer,Medium,200.0,Expert,97.0,37.0
+Interview,30.5, Medium ,Guess Answer,Low,24.0,Expert,83.0,20.0
+Exam,10.0,Low,Confident Response,Medium,34.0,[Beginner],82.0,6.0
+Interview,59.0,Very High,Hesitation,High,39.0,Expert,70.0,32.0
+Exam,58.0,Low,  Quick Decision  ,Medium,22.0,*Beginner*,93.0,22.0
+Emergency,46.0,Medium,Quick Decision,Medium,null,Beginner,112.0,23.0
+Emergency,48.0,VERY HIGH,Confident Response,High,36.0,Expert,NaN,25.0
+Interview,-37.5,High,Confident Response,Low,31.0,Expert,74.0,37.0
+Emergency,22.0,High,Logical Answer	,Low,28.0,Beginner,140.0,19.0
+Interview,31.0,Low,Call for Help,HIGH,219.58,	Beginner	,113.0,10.0
+Interview,48.0,Low,*Panic Reaction*,Low,28.0,Expert,76.0,25.0
+Interview,13.0,Medium,Quick Decision,Medium,21.0,Beginner,1400.0,11.0
+INTERVIEW,52.0,Low,Hesitation,Medium,35.0,Expert,71.0,21.0
+Exam,27.0,Medium,Confident Response,medium,22.0,Expert,87.0,7.0
+  interview  ,55.0,Very High,confident response,Low,40.0,Beginner,134.0,
+Interview,59.0,Low,Confident Response,Medium,28.0,Intermediate,86.0,12.0
+Emergency,39.0,High,Structured Answer,Medium,150.0,Beginner,84.0,20.0
+Interview,27.0,Very High,Hesitation,Low,21.0,Beginner,127.0,9.0
+Interview,21.0,High, Confident Response,Low,20.0,Intermediate,104.0,19.0
+Interview,42.0,Medium,Structured Answer,Low,150.0,Intermediate,100.0,19.0
+Exam,19.0,Low,Guess Answer,Low,21.0,Intermediate,90.0,6.0
+Emergency,51.0, Very High,Hesitation,Medium,31.0,Beginner,98.0,16.0
+Emergency,39.0,Medium,Structured Answer,Low,18.0,Expert,112.0,9.0
+Emergency,24.0,Low,Quick Decision,High,25.0,Expert,128.0,25.0
+Exam,17.0,High,Guess Answer,Low,33.0,Expert,116.0,8.0
+Exam,28.0,Medium,Structured Answer,Medium,32.0,Expert,78.0,9.0
+Emergency,50.0,High ,Panic Reaction,High,5.0,Intermediate,133.0,25.0
+Interview,20.0,Low,Logical Answer,High,26.0,Intermediate,99.0,9.0
+Emergency,15.0,Very High,Hesitation,Low,21.0,Intermediate,seven,10.0
+Exam,15.0,,Logical Answer,Medium,20.0,Intermediate,131.0,48.0
+Exam,58.0,Low,Confident Response,Low,33.0,Beginner,85.0,22.0
+Exam,43.0,High,Guess Answer , High,23.0,Expert,105.0,27.0
+N/A,24.0,Very High,Hesitation,Medium,39.0,Intermediate,88.0,19.0
+Interview,32.0,Low,Call for Help,Medium,27.0,  Expert  ,87.0,7.0
+Exam ,-35.37, Low,Panic Reaction,High,28.0, Beginner ,72.0,12.0
+Exam,51.0,Low,QUICK DECISION,High,28.0,*Beginner*,76.0,40.0
+Interview,49.0,Medium,Structured Answer,  High  ,-100.0, Beginner,1400.0,8.0
+Emergency,33.0,High,Confident Response ,Low,150.0,Intermediate	,136.0,11.0
+Emergency,42.0,Medium,Structured Answer,Medium,33.0,Intermediate,84.0,37.0
+Exam,42.0,Low,Structured Answer,Low,31.0,Intermediate ,70.0,30.0
+Emergency,39.0,Low,Panic Reaction,High,33.0,Beginner,115.0,8.0
+Interview,60.0,High,Panic Reaction,Medium,22.0,Intermediate,132.0,30.0
+Exam,25.0,Medium,Hesitation,Low,33.0,Expert,117.0,6.0
+Emergency,38.0,High,Guess Answer,Medium,20.0,Expert,115.0,9.0
+Emergency,35.0,Medium,Quick Decision,Low,0.0,Intermediate,1400.0,15.0
+ Emergency,32.0,HIGH, Confident Response,Low,26.0, Intermediate ,75.0,17.0
+Exam,25.0,Medium,Logical Answer,Low,35.0,Expert,106.0,5.0
+Interview,24.0,Very High,Hesitation,Medium,18.0,Expert,113.0,14.0
+Interview,60.0,Very High,Quick Decision,  Low  ,veinte,beginner,70.0,52.0
+Exam,10.0,[Low],Call for Help ,Low,37.0,[Beginner],98.0,5.0
+Interview,58.0,Medium,[Guess Answer],Medium,24.0,  Beginner  ,125.0,6.0
+Exam,38.0,Medium,Call for Help,Low,38.0,Expert,75.0,9.0
+Emergency,42.0,High,Logical Answer,	Medium	,-100.0,Expert,1400.0,36.0
+Exam,21.0,Low,Guess Answer,Medium,23.0,Expert,104.0,5.0
+ Emergency ,-5.0,Medium,Quick Decision,High,30.0,Expert,-805.0,27.0
+Emergency,44.0,High,?,Medium,32.0,Expert,128.0,19.0
+ Emergency,30.0,High,Panic Reaction,Medium,19.0,beginner,103.0,-5.0
+Emergency,51.0,Low	,Quick Decision,High,33.0,Expert,1400.0,28.0
+Emergency,48.0,Very High,Hesitation,High,21.0,Expert,80.0,30.5
+Exam,26.0,na,Quick Decision,Medium,38.0,Beginner,127.0,26.0
+Interview,31.0,Medium,Guess Answer,High,22.0,Expert,88.0,48.0
+Interview,29.0,Medium,Confident Response,Medium,25.0,Beginner,132.0,24.0
+Interview,30.0,Low,structured answer,-,5.0,Beginner,126.0,22.0
+Emergency,57.0,Medium,*Quick Decision*,Medium,NaN,Expert,-805.0,47.0
+Exam,56.0,Low,Hesitation,  Medium,31.0,Beginner,93.0,15.0
+Emergency	,25.0,Medium,Structured Answer,Low,28.0, Intermediate,125.0,6.0
+Emergency,57.0,Low,	Quick Decision	,Low,40.0, Expert,103.0,-5.0
+Exam,59.0,High,Quick Decision,Medium,36.0,Intermediate,124.0,49.0
+Exam,11.0,Low,Confident Response,High,22.0,Intermediate,80.0,5.0
+Interview ,57.0,Low,Panic Reaction,High,38.0,intermediate,105.0,14.0
+Exam,28.0,  High  ,Guess Answer,High,34.0,?,83.0,20.0
+Exam,48.0,Very High,Quick Decision,medium,22.0,Expert,112.0,17.0
+Emergency,twenty, Medium 	,* Structured Answer *,Medium,27.0,EXPERT,136.0,6.0
+Interview,36.0,High,Logical Answer,Low	,34.0,  Expert  ,1400.0,11.0
+Interview,30.5,Medium,Quick Decision,Low,26.0,Beginner,122.0,30.0
+Interview,53.0,Low,Hesitation,Low,30.0,Beginner,79.0,16.0
+Emergency,-28.68,low,Confident Response,[Medium],22.0,BEGINNER,121.0,20.0
+Interview,37.0,Very High,Hesitation,Low,29.0,,-70.0,10.0
+Interview,35.0,High,Call for Help,Medium,24.0,Beginner,140.0,29.0
+Interview,36.0,Very High,structured answer,High,20.0,Intermediate,101.0,15.0
+Exam	,39.0,[Medium],	Quick Decision	,Low,37.0,Expert ,87.0,9.0
+Emergency,53.0,Medium,Guess Answer,Low	,32.0,Expert,117.0,6.0
+Emergency,22.0,Medium,Panic Reaction,Low ,31.0,	Intermediate	,twenty,15.0
+Exam,16.0,Medium,Structured Answer,Low,ocho horas,Beginner,1400.0,8.0
+  Interview  ,33.0,Medium,Quick Decision,Low,31.0,Beginner,93.0,20.0
+Exam	,56.0,Medium,Quick Decision,Medium,29.0,Beginner,98.0,5.0
+Exam,21.0,Very High,Guess Answer,High,37.0,EXPERT,91.0,12.0
+Interview,46.0,Very High,Guess Answer,High ,22.0,Expert,71.0,ocho horas
+Emergency,50.0,Low,Call for Help,  high  ,28.0,INTERMEDIATE,102.0,31.0
+Interview,34.0,Low,Guess Answer,Low,30.0,Intermediate,1480.34,10.0
+Interview,44.0,Very High,na,Medium,cinco punto tres,Intermediate,117.0,24.0
+	Emergency	,23.0,Low,Panic Reaction	,Low,five point two,Beginner,74.0,11.0
+Emergency,33.0,Low,Guess Answer,High,37.0,Beginner,140.0,14.0
+Interview,44.0,Low,Call for Help	,Low,32.0,[Expert],-,9.0
+Exam,15.0,Very High,Quick Decision,High,28.0,Intermediate,106.0,8.0
+Exam,30.0,Very High,Call for Help,*Medium*,24.0,Expert,77.0,6.0
+Interview,30.0,Very High,STRUCTURED ANSWER,High,40.0,Intermediate,101.0,12.0
+Exam,23.0,Medium,Confident Response,Low,26.0,Intermediate	,86.0,18.0
+Emergency ,37.0,Very High,Logical Answer,Medium,36.0,Intermediate,122.0,36.0
+Interview,52.0,Medium,GUESS ANSWER,High,32.0,Beginner,77.0,8.0
+Exam,-5.0,Low,Panic Reaction,[High],150.0,Intermediate,71.0,30.0
+Emergency,31.0,Very High,Panic Reaction,High,150.0,Expert,125.0,13.0
+Interview,57.0,Medium,Confident Response,Medium,23.0,Expert,104.0,56.0
+Exam,60.0,Medium,Call for Help,low,39.0,Beginner,-70.0,53.0
+Exam,14.0,Low,Hesitation, High,26.0,Expert,92.0,14.0
+Emergency,60.0,High,*Hesitation*,High,22.0,Intermediate,-70.0,17.0
+Emergency,42.0,High,Hesitation,Low,200.0,Intermediate,83.0,29.0
+Interview,25.0,Low,Structured Answer,Medium,27.0,Beginner,76.0,25.0
+Interview,36.0,Low,Confident Response,Low,21.0,Expert,108.0,dieciocho
+Emergency,22.0,Very High,Quick Decision,Low,34.0,*Expert*,93.0,10.0
+Interview,25.0,Medium,panic reaction,Medium,38.0,Beginner,88.0,5.0
+Exam,28.0,Low, Logical Answer ,Medium,19.0,Beginner,doce,25.0
+Emergency,17.0,N/A,Quick Decision,Medium,31.0,Beginner,128.0,5.0
+Interview ,14.0,Very High ,Call for Help,Low,33.0,Expert,110.0,6.0
+Exam,29.0,High,Panic Reaction ,High,150.0, Expert ,103.0,26.0
+Emergency,30.0,Medium,Quick Decision,Low,5.0,Expert,1541.93,8.0
+Interview,12.0,Very High, Guess Answer, High,34.0,EXPERT,137.0,11.0
+Exam,37.0,Low,Call for Help,High,20.0,Intermediate,102.0,24.0
+Emergency,37.0,  Medium  ,Structured Answer,High,29.0,	Expert	,76.0,19.0
+EXAM,54.0,High,Panic Reaction,Low,22.0,Beginner,1567.2,48.0
+Exam,39.0,Low,Panic Reaction,Medium,18.0,Beginner,120.0,38.0
+Interview,16.0,Low,Guess Answer ,High,23.0,Expert ,123.0,12.0
+Interview,39.0,High	,Logical Answer,	Medium	,28.0,Expert,85.0,25.0
+*Emergency*,20.0,High,Quick Decision ,medium,27.0,Intermediate,twenty,19.0
+Emergency,39.0,Low,Logical Answer,Medium,treinta y dos,Intermediate,96.0,11.0
+Interview,44.0, Medium ,Quick Decision,High,19.0,Expert,114.0,28.0
+Emergency,30.0,High,Call for Help,High,30.0,Beginner,84.0,7.0
+Interview ,16.0,Medium,Logical Answer,Low,18.0,Intermediate,115.0,48.0
+Exam ,-5.0,Low,Hesitation,Low,24.0,Intermediate,140.0,7.0
+Exam,-5.0,Medium,Logical Answer,High,38.0,Intermediate,103.0,5.0
+Emergency,39.0,Medium,Panic Reaction,Low,30.0,Intermediate,95.0,23.0
+Exam,30.5,High,Call for Help,High,30.0,Expert,121.0,25.0
+Exam,46.0,High,Hesitation,low,20.0,[Beginner],140.0,10.0
+	Interview	,28.0,Low,Structured Answer,Medium,25.0,Beginner,103.0,25.0
+NaN,51.0,Medium,  Logical Answer  ,High,33.0,Expert,-70.0,29.0
+[Emergency],54.0,Medium, Panic Reaction,Low ,5.0,Beginner,131.0,18.0
+Exam,48.0,Very High,Panic Reaction,High,34.0,Beginner,109.0,23.0
+Interview,28.0,Very High,Guess Answer,Low,5.0,Expert,doce,19.0
+Interview,30.5,Very High,Call for Help,Low,38.0,Intermediate,108.0,25.0
+Emergency,58.0,Very High,	Confident Response	,High,20.0,Beginner,98.0,29.0

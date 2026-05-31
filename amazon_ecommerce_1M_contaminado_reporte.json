@@ -1,0 +1,941 @@
+{
+  "caso1_normalizacion_categorias": {
+    "descripcion": "Problemas de normalización en categorías (mayúsculas, espacios, guiones)",
+    "columnas_afectadas": [
+      "user_id",
+      "product_id",
+      "category",
+      "subcategory",
+      "brand",
+      "seller_id",
+      "purchase_date",
+      "location",
+      "device",
+      "payment_method",
+      "delivery_status"
+    ],
+    "total_problemas": 1100000,
+    "problemas": [
+      {
+        "indice": 670487,
+        "columna": "user_id",
+        "valor_original": "U353257",
+        "valor_contaminado": " U530755"
+      },
+      {
+        "indice": 116739,
+        "columna": "user_id",
+        "valor_original": "U190679",
+        "valor_contaminado": "u818072"
+      },
+      {
+        "indice": 26225,
+        "columna": "user_id",
+        "valor_original": "U714528",
+        "valor_contaminado": "u621955"
+      },
+      {
+        "indice": 777572,
+        "columna": "user_id",
+        "valor_original": "U447946",
+        "valor_contaminado": "U189601 "
+      },
+      {
+        "indice": 288389,
+        "columna": "user_id",
+        "valor_original": "U831354",
+        "valor_contaminado": " U111454 "
+      },
+      {
+        "indice": 256787,
+        "columna": "user_id",
+        "valor_original": "U369999",
+        "valor_contaminado": "u307698"
+      },
+      {
+        "indice": 234053,
+        "columna": "user_id",
+        "valor_original": "U996240",
+        "valor_contaminado": " U183309 "
+      },
+      {
+        "indice": 146316,
+        "columna": "user_id",
+        "valor_original": "U590222",
+        "valor_contaminado": "U970598 "
+      },
+      {
+        "indice": 772246,
+        "columna": "user_id",
+        "valor_original": "U926326",
+        "valor_contaminado": "U274470 "
+      },
+      {
+        "indice": 107473,
+        "columna": "user_id",
+        "valor_original": "U592537",
+        "valor_contaminado": "U344472 "
+      },
+      {
+        "indice": 709570,
+        "columna": "user_id",
+        "valor_original": "U806568",
+        "valor_contaminado": " U780672 "
+      },
+      {
+        "indice": 776646,
+        "columna": "user_id",
+        "valor_original": "U959712",
+        "valor_contaminado": "U137029 "
+      },
+      {
+        "indice": 935518,
+        "columna": "user_id",
+        "valor_original": "U181189",
+        "valor_contaminado": " U500649 "
+      },
+      {
+        "indice": 571858,
+        "columna": "user_id",
+        "valor_original": "U923986",
+        "valor_contaminado": " U679570 "
+      },
+      {
+        "indice": 91161,
+        "columna": "user_id",
+        "valor_original": "U972428",
+        "valor_contaminado": "u166452"
+      },
+      {
+        "indice": 619176,
+        "columna": "user_id",
+        "valor_original": "U473851",
+        "valor_contaminado": " U219294"
+      },
+      {
+        "indice": 442417,
+        "columna": "user_id",
+        "valor_original": "U388714",
+        "valor_contaminado": "U455478 "
+      },
+      {
+        "indice": 33326,
+        "columna": "user_id",
+        "valor_original": "U921778",
+        "valor_contaminado": " U296154 "
+      },
+      {
+        "indice": 31244,
+        "columna": "user_id",
+        "valor_original": "U624377",
+        "valor_contaminado": " U682334"
+      },
+      {
+        "indice": 98246,
+        "columna": "user_id",
+        "valor_original": "U295459",
+        "valor_contaminado": "U827963 "
+      }
+    ]
+  },
+  "caso2_validacion_rangos": {
+    "descripcion": "Valores numéricos fuera de rangos válidos o lógicos",
+    "columnas_afectadas": [
+      "shipping_time_days",
+      "price",
+      "discount",
+      "final_price",
+      "rating",
+      "review_count",
+      "stock",
+      "seller_rating"
+    ],
+    "total_problemas": 800000,
+    "problemas": [
+      {
+        "indice": 657498,
+        "columna": "shipping_time_days",
+        "valor_original": 1.0,
+        "valor_contaminado": 25.0,
+        "problema": "Valor fuera de rango en shipping_time_days"
+      },
+      {
+        "indice": 333460,
+        "columna": "shipping_time_days",
+        "valor_original": 2.0,
+        "valor_contaminado": 25.0,
+        "problema": "Valor fuera de rango en shipping_time_days"
+      },
+      {
+        "indice": 349124,
+        "columna": "shipping_time_days",
+        "valor_original": 2.0,
+        "valor_contaminado": 48.0,
+        "problema": "Valor fuera de rango en shipping_time_days"
+      },
+      {
+        "indice": 578757,
+        "columna": "shipping_time_days",
+        "valor_original": 6.0,
+        "valor_contaminado": 48.0,
+        "problema": "Valor fuera de rango en shipping_time_days"
+      },
+      {
+        "indice": 802306,
+        "columna": "shipping_time_days",
+        "valor_original": 2.0,
+        "valor_contaminado": 30.5,
+        "problema": "Valor fuera de rango en shipping_time_days"
+      },
+      {
+        "indice": 206112,
+        "columna": "shipping_time_days",
+        "valor_original": 4.0,
+        "valor_contaminado": 25.0,
+        "problema": "Valor fuera de rango en shipping_time_days"
+      },
+      {
+        "indice": 261288,
+        "columna": "shipping_time_days",
+        "valor_original": 3.0,
+        "valor_contaminado": -5.0,
+        "problema": "Valor fuera de rango en shipping_time_days"
+      },
+      {
+        "indice": 541887,
+        "columna": "shipping_time_days",
+        "valor_original": 1.0,
+        "valor_contaminado": 48.0,
+        "problema": "Valor fuera de rango en shipping_time_days"
+      },
+      {
+        "indice": 747658,
+        "columna": "shipping_time_days",
+        "valor_original": 1.0,
+        "valor_contaminado": 48.0,
+        "problema": "Valor fuera de rango en shipping_time_days"
+      },
+      {
+        "indice": 993563,
+        "columna": "shipping_time_days",
+        "valor_original": 4.0,
+        "valor_contaminado": 25.0,
+        "problema": "Valor fuera de rango en shipping_time_days"
+      },
+      {
+        "indice": 266137,
+        "columna": "shipping_time_days",
+        "valor_original": 2.0,
+        "valor_contaminado": -5.0,
+        "problema": "Valor fuera de rango en shipping_time_days"
+      },
+      {
+        "indice": 534877,
+        "columna": "shipping_time_days",
+        "valor_original": 4.0,
+        "valor_contaminado": 48.0,
+        "problema": "Valor fuera de rango en shipping_time_days"
+      },
+      {
+        "indice": 542653,
+        "columna": "shipping_time_days",
+        "valor_original": 1.0,
+        "valor_contaminado": -5.0,
+        "problema": "Valor fuera de rango en shipping_time_days"
+      },
+      {
+        "indice": 718511,
+        "columna": "shipping_time_days",
+        "valor_original": 2.0,
+        "valor_contaminado": 48.0,
+        "problema": "Valor fuera de rango en shipping_time_days"
+      },
+      {
+        "indice": 412719,
+        "columna": "shipping_time_days",
+        "valor_original": 2.0,
+        "valor_contaminado": 25.0,
+        "problema": "Valor fuera de rango en shipping_time_days"
+      },
+      {
+        "indice": 238369,
+        "columna": "shipping_time_days",
+        "valor_original": 3.0,
+        "valor_contaminado": 48.0,
+        "problema": "Valor fuera de rango en shipping_time_days"
+      },
+      {
+        "indice": 718562,
+        "columna": "shipping_time_days",
+        "valor_original": 1.0,
+        "valor_contaminado": -5.0,
+        "problema": "Valor fuera de rango en shipping_time_days"
+      },
+      {
+        "indice": 40717,
+        "columna": "shipping_time_days",
+        "valor_original": 2.0,
+        "valor_contaminado": -5.0,
+        "problema": "Valor fuera de rango en shipping_time_days"
+      },
+      {
+        "indice": 633199,
+        "columna": "shipping_time_days",
+        "valor_original": 4.0,
+        "valor_contaminado": 25.0,
+        "problema": "Valor fuera de rango en shipping_time_days"
+      },
+      {
+        "indice": 953440,
+        "columna": "shipping_time_days",
+        "valor_original": 3.0,
+        "valor_contaminado": 25.0,
+        "problema": "Valor fuera de rango en shipping_time_days"
+      }
+    ]
+  },
+  "caso3_outliers": {
+    "descripcion": "Outliers estadísticamente extremos pero técnicamente posibles",
+    "columnas_afectadas": [
+      "price",
+      "discount",
+      "final_price",
+      "rating",
+      "review_count",
+      "stock",
+      "seller_rating",
+      "shipping_time_days"
+    ],
+    "total_problemas": 100000,
+    "problemas": [
+      {
+        "indice": 53288,
+        "columna": "price",
+        "valor_original": 73171.0,
+        "valor_contaminado": 771651.76,
+        "problema": "Outlier estadístico"
+      },
+      {
+        "indice": 592255,
+        "columna": "price",
+        "valor_original": 5378.86,
+        "valor_contaminado": 673583.23,
+        "problema": "Outlier estadístico"
+      },
+      {
+        "indice": 803444,
+        "columna": "price",
+        "valor_original": 799997.0,
+        "valor_contaminado": 791271.2,
+        "problema": "Outlier estadístico"
+      },
+      {
+        "indice": 782209,
+        "columna": "price",
+        "valor_original": 4599.35,
+        "valor_contaminado": -459998.28,
+        "problema": "Outlier estadístico"
+      },
+      {
+        "indice": 674871,
+        "columna": "price",
+        "valor_original": 4934.51,
+        "valor_contaminado": 856873.82,
+        "problema": "Outlier estadístico"
+      },
+      {
+        "indice": 31793,
+        "columna": "price",
+        "valor_original": 4689.11,
+        "valor_contaminado": 708689.99,
+        "problema": "Outlier estadístico"
+      },
+      {
+        "indice": 253025,
+        "columna": "price",
+        "valor_original": 14741.96,
+        "valor_contaminado": -459998.28,
+        "problema": "Outlier estadístico"
+      },
+      {
+        "indice": 288003,
+        "columna": "price",
+        "valor_original": 3802.15,
+        "valor_contaminado": -459998.28,
+        "problema": "Outlier estadístico"
+      },
+      {
+        "indice": 482424,
+        "columna": "price",
+        "valor_original": 23183.25,
+        "valor_contaminado": 722046.82,
+        "problema": "Outlier estadístico"
+      },
+      {
+        "indice": 826646,
+        "columna": "price",
+        "valor_original": 1700.26,
+        "valor_contaminado": -459998.28,
+        "problema": "Outlier estadístico"
+      },
+      {
+        "indice": 90146,
+        "columna": "price",
+        "valor_original": 64367.05,
+        "valor_contaminado": 735740.2,
+        "problema": "Outlier estadístico"
+      },
+      {
+        "indice": 169849,
+        "columna": "price",
+        "valor_original": -39999.85,
+        "valor_contaminado": -459998.28,
+        "problema": "Outlier estadístico"
+      },
+      {
+        "indice": 729396,
+        "columna": "price",
+        "valor_original": 4075.04,
+        "valor_contaminado": 659699.52,
+        "problema": "Outlier estadístico"
+      },
+      {
+        "indice": 914195,
+        "columna": "price",
+        "valor_original": 4654.2,
+        "valor_contaminado": 907348.57,
+        "problema": "Outlier estadístico"
+      },
+      {
+        "indice": 864879,
+        "columna": "price",
+        "valor_original": 1920.88,
+        "valor_contaminado": 799272.66,
+        "problema": "Outlier estadístico"
+      },
+      {
+        "indice": 532269,
+        "columna": "price",
+        "valor_original": 381.18,
+        "valor_contaminado": -459998.28,
+        "problema": "Outlier estadístico"
+      },
+      {
+        "indice": 691025,
+        "columna": "price",
+        "valor_original": 13271.94,
+        "valor_contaminado": 759183.98,
+        "problema": "Outlier estadístico"
+      },
+      {
+        "indice": 313092,
+        "columna": "price",
+        "valor_original": 18243.28,
+        "valor_contaminado": 706787.9,
+        "problema": "Outlier estadístico"
+      },
+      {
+        "indice": 426249,
+        "columna": "price",
+        "valor_original": 20119.83,
+        "valor_contaminado": -459998.28,
+        "problema": "Outlier estadístico"
+      },
+      {
+        "indice": 118408,
+        "columna": "price",
+        "valor_original": 546.62,
+        "valor_contaminado": -459998.28,
+        "problema": "Outlier estadístico"
+      }
+    ]
+  },
+  "caso4_consistencia": {
+    "descripcion": "No se encontraron pares de columnas relacionadas",
+    "total_problemas": 0,
+    "problemas": []
+  },
+  "caso5_valores_faltantes": {
+    "descripcion": "Valores faltantes (vacíos, N/A, NULL, etc.)",
+    "columnas_afectadas": [
+      "user_id",
+      "product_id",
+      "category",
+      "subcategory",
+      "brand",
+      "price",
+      "discount",
+      "final_price",
+      "rating",
+      "review_count",
+      "stock",
+      "seller_id",
+      "seller_rating",
+      "purchase_date",
+      "shipping_time_days",
+      "location",
+      "device",
+      "payment_method",
+      "is_returned",
+      "delivery_status"
+    ],
+    "total_problemas": 100000,
+    "problemas": [
+      {
+        "indice": 580538,
+        "columna": "user_id",
+        "valor_original": "U280845",
+        "valor_faltante": "",
+        "problema": "Valor faltante representado como: ''"
+      },
+      {
+        "indice": 15426,
+        "columna": "user_id",
+        "valor_original": "U746261",
+        "valor_faltante": "null",
+        "problema": "Valor faltante representado como: 'null'"
+      },
+      {
+        "indice": 910978,
+        "columna": "user_id",
+        "valor_original": "U396084",
+        "valor_faltante": "N/A",
+        "problema": "Valor faltante representado como: 'N/A'"
+      },
+      {
+        "indice": 80216,
+        "columna": "user_id",
+        "valor_original": "U134711 ",
+        "valor_faltante": "NULL",
+        "problema": "Valor faltante representado como: 'NULL'"
+      },
+      {
+        "indice": 453568,
+        "columna": "user_id",
+        "valor_original": "U744594",
+        "valor_faltante": "NULL",
+        "problema": "Valor faltante representado como: 'NULL'"
+      },
+      {
+        "indice": 380997,
+        "columna": "user_id",
+        "valor_original": "U377217",
+        "valor_faltante": "NULL",
+        "problema": "Valor faltante representado como: 'NULL'"
+      },
+      {
+        "indice": 441098,
+        "columna": "user_id",
+        "valor_original": "U625474",
+        "valor_faltante": "NaN",
+        "problema": "Valor faltante representado como: 'NaN'"
+      },
+      {
+        "indice": 290787,
+        "columna": "user_id",
+        "valor_original": "U394213",
+        "valor_faltante": "NaN",
+        "problema": "Valor faltante representado como: 'NaN'"
+      },
+      {
+        "indice": 987742,
+        "columna": "user_id",
+        "valor_original": "u383223",
+        "valor_faltante": "NaN",
+        "problema": "Valor faltante representado como: 'NaN'"
+      },
+      {
+        "indice": 929861,
+        "columna": "user_id",
+        "valor_original": "U795548",
+        "valor_faltante": "na",
+        "problema": "Valor faltante representado como: 'na'"
+      },
+      {
+        "indice": 355840,
+        "columna": "user_id",
+        "valor_original": "U249361",
+        "valor_faltante": "",
+        "problema": "Valor faltante representado como: ''"
+      },
+      {
+        "indice": 861971,
+        "columna": "user_id",
+        "valor_original": "U800580",
+        "valor_faltante": "",
+        "problema": "Valor faltante representado como: ''"
+      },
+      {
+        "indice": 649616,
+        "columna": "user_id",
+        "valor_original": "U255771",
+        "valor_faltante": "na",
+        "problema": "Valor faltante representado como: 'na'"
+      },
+      {
+        "indice": 848256,
+        "columna": "user_id",
+        "valor_original": "U530668",
+        "valor_faltante": "N/A",
+        "problema": "Valor faltante representado como: 'N/A'"
+      },
+      {
+        "indice": 82223,
+        "columna": "user_id",
+        "valor_original": "U458411",
+        "valor_faltante": "N/A",
+        "problema": "Valor faltante representado como: 'N/A'"
+      },
+      {
+        "indice": 139939,
+        "columna": "user_id",
+        "valor_original": "U581090",
+        "valor_faltante": "null",
+        "problema": "Valor faltante representado como: 'null'"
+      },
+      {
+        "indice": 417463,
+        "columna": "user_id",
+        "valor_original": "U595890",
+        "valor_faltante": "",
+        "problema": "Valor faltante representado como: ''"
+      },
+      {
+        "indice": 961106,
+        "columna": "user_id",
+        "valor_original": "U346161",
+        "valor_faltante": "na",
+        "problema": "Valor faltante representado como: 'na'"
+      },
+      {
+        "indice": 635990,
+        "columna": "user_id",
+        "valor_original": "U183860",
+        "valor_faltante": "NULL",
+        "problema": "Valor faltante representado como: 'NULL'"
+      },
+      {
+        "indice": 600463,
+        "columna": "user_id",
+        "valor_original": "U684486",
+        "valor_faltante": "na",
+        "problema": "Valor faltante representado como: 'na'"
+      }
+    ]
+  },
+  "caso6_tipos_datos": {
+    "descripcion": "Valores numéricos representados como texto",
+    "columnas_afectadas": [
+      "price",
+      "discount",
+      "final_price",
+      "rating",
+      "review_count",
+      "stock",
+      "seller_rating",
+      "shipping_time_days"
+    ],
+    "total_problemas": 100000,
+    "problemas": [
+      {
+        "indice": 705976,
+        "columna": "price",
+        "valor_original": 1332.14,
+        "valor_texto": "twenty",
+        "problema": "Valor numérico como texto: twenty"
+      },
+      {
+        "indice": 691280,
+        "columna": "price",
+        "valor_original": -459998.28,
+        "valor_texto": "doce",
+        "problema": "Valor numérico como texto: doce"
+      },
+      {
+        "indice": 407062,
+        "columna": "price",
+        "valor_original": 10029.23,
+        "valor_texto": "twelve",
+        "problema": "Valor numérico como texto: twelve"
+      },
+      {
+        "indice": 930572,
+        "columna": "price",
+        "valor_original": 4871.88,
+        "valor_texto": "nueve",
+        "problema": "Valor numérico como texto: nueve"
+      },
+      {
+        "indice": 840142,
+        "columna": "price",
+        "valor_original": 12709.43,
+        "valor_texto": "N/D",
+        "problema": "Valor numérico como texto: N/D"
+      },
+      {
+        "indice": 620846,
+        "columna": "price",
+        "valor_original": 1987.27,
+        "valor_texto": "treinta y dos",
+        "problema": "Valor numérico como texto: treinta y dos"
+      },
+      {
+        "indice": 278909,
+        "columna": "price",
+        "valor_original": 74208.49,
+        "valor_texto": "twelve",
+        "problema": "Valor numérico como texto: twelve"
+      },
+      {
+        "indice": 200126,
+        "columna": "price",
+        "valor_original": 3220.32,
+        "valor_texto": "veinte",
+        "problema": "Valor numérico como texto: veinte"
+      },
+      {
+        "indice": 114743,
+        "columna": "price",
+        "valor_original": -39999.85,
+        "valor_texto": "treinta y dos",
+        "problema": "Valor numérico como texto: treinta y dos"
+      },
+      {
+        "indice": 883935,
+        "columna": "price",
+        "valor_original": 3574.29,
+        "valor_texto": "N/D",
+        "problema": "Valor numérico como texto: N/D"
+      },
+      {
+        "indice": 860744,
+        "columna": "price",
+        "valor_original": 8811.15,
+        "valor_texto": "treinta y dos",
+        "problema": "Valor numérico como texto: treinta y dos"
+      },
+      {
+        "indice": 34918,
+        "columna": "price",
+        "valor_original": 841.08,
+        "valor_texto": "ocho horas",
+        "problema": "Valor numérico como texto: ocho horas"
+      },
+      {
+        "indice": 373003,
+        "columna": "price",
+        "valor_original": 13157.64,
+        "valor_texto": "twelve",
+        "problema": "Valor numérico como texto: twelve"
+      },
+      {
+        "indice": 684111,
+        "columna": "price",
+        "valor_original": 14263.18,
+        "valor_texto": "nueve",
+        "problema": "Valor numérico como texto: nueve"
+      },
+      {
+        "indice": 990804,
+        "columna": "price",
+        "valor_original": 8392.87,
+        "valor_texto": "twelve",
+        "problema": "Valor numérico como texto: twelve"
+      },
+      {
+        "indice": 505522,
+        "columna": "price",
+        "valor_original": 4879.33,
+        "valor_texto": "five point two",
+        "problema": "Valor numérico como texto: five point two"
+      },
+      {
+        "indice": 865705,
+        "columna": "price",
+        "valor_original": 7270.68,
+        "valor_texto": "doce",
+        "problema": "Valor numérico como texto: doce"
+      },
+      {
+        "indice": 641627,
+        "columna": "price",
+        "valor_original": 1864.39,
+        "valor_texto": "cinco punto tres",
+        "problema": "Valor numérico como texto: cinco punto tres"
+      },
+      {
+        "indice": 816613,
+        "columna": "price",
+        "valor_original": 76985.86,
+        "valor_texto": "veinte",
+        "problema": "Valor numérico como texto: veinte"
+      },
+      {
+        "indice": 388317,
+        "columna": "price",
+        "valor_original": 2649.63,
+        "valor_texto": "n/a",
+        "problema": "Valor numérico como texto: n/a"
+      }
+    ]
+  },
+  "caso7_formato": {
+    "descripcion": "Problemas de formato (espacios extra, caracteres especiales)",
+    "columnas_afectadas": [
+      "user_id",
+      "product_id",
+      "category",
+      "subcategory",
+      "brand",
+      "seller_id",
+      "purchase_date",
+      "location",
+      "device",
+      "payment_method",
+      "delivery_status"
+    ],
+    "total_problemas": 1100000,
+    "problemas": [
+      {
+        "indice": 81898,
+        "columna": "user_id",
+        "valor_original": " U779184 ",
+        "valor_contaminado": "'* U779184 *'",
+        "problema": "Espacios extra o caracteres especiales"
+      },
+      {
+        "indice": 990046,
+        "columna": "user_id",
+        "valor_original": "U848526",
+        "valor_contaminado": "'*U848526*'",
+        "problema": "Espacios extra o caracteres especiales"
+      },
+      {
+        "indice": 150495,
+        "columna": "user_id",
+        "valor_original": "U390410",
+        "valor_contaminado": "'U390410 '",
+        "problema": "Espacios extra o caracteres especiales"
+      },
+      {
+        "indice": 342672,
+        "columna": "user_id",
+        "valor_original": "U190411",
+        "valor_contaminado": "'U190411 '",
+        "problema": "Espacios extra o caracteres especiales"
+      },
+      {
+        "indice": 613467,
+        "columna": "user_id",
+        "valor_original": "U604288",
+        "valor_contaminado": "' U604288'",
+        "problema": "Espacios extra o caracteres especiales"
+      },
+      {
+        "indice": 401622,
+        "columna": "user_id",
+        "valor_original": "U182925",
+        "valor_contaminado": "'\\tU182925\\t'",
+        "problema": "Espacios extra o caracteres especiales"
+      },
+      {
+        "indice": 855655,
+        "columna": "user_id",
+        "valor_original": "U403723",
+        "valor_contaminado": "'\\tU403723\\t'",
+        "problema": "Espacios extra o caracteres especiales"
+      },
+      {
+        "indice": 610311,
+        "columna": "user_id",
+        "valor_original": "U224658",
+        "valor_contaminado": "'  U224658  '",
+        "problema": "Espacios extra o caracteres especiales"
+      },
+      {
+        "indice": 260592,
+        "columna": "user_id",
+        "valor_original": "U875901",
+        "valor_contaminado": "' U875901'",
+        "problema": "Espacios extra o caracteres especiales"
+      },
+      {
+        "indice": 44758,
+        "columna": "user_id",
+        "valor_original": "U627840",
+        "valor_contaminado": "'\\tU627840\\t'",
+        "problema": "Espacios extra o caracteres especiales"
+      },
+      {
+        "indice": 915472,
+        "columna": "user_id",
+        "valor_original": "U926027",
+        "valor_contaminado": "'U926027\\t'",
+        "problema": "Espacios extra o caracteres especiales"
+      },
+      {
+        "indice": 599125,
+        "columna": "user_id",
+        "valor_original": " U423669",
+        "valor_contaminado": "'   U423669  '",
+        "problema": "Espacios extra o caracteres especiales"
+      },
+      {
+        "indice": 445470,
+        "columna": "user_id",
+        "valor_original": "U328782",
+        "valor_contaminado": "'*U328782*'",
+        "problema": "Espacios extra o caracteres especiales"
+      },
+      {
+        "indice": 236634,
+        "columna": "user_id",
+        "valor_original": "U924117",
+        "valor_contaminado": "' U924117'",
+        "problema": "Espacios extra o caracteres especiales"
+      },
+      {
+        "indice": 554803,
+        "columna": "user_id",
+        "valor_original": "U823230",
+        "valor_contaminado": "'U823230 '",
+        "problema": "Espacios extra o caracteres especiales"
+      },
+      {
+        "indice": 506838,
+        "columna": "user_id",
+        "valor_original": "U563701",
+        "valor_contaminado": "'[U563701]'",
+        "problema": "Espacios extra o caracteres especiales"
+      },
+      {
+        "indice": 309629,
+        "columna": "user_id",
+        "valor_original": "U904406",
+        "valor_contaminado": "'*U904406*'",
+        "problema": "Espacios extra o caracteres especiales"
+      },
+      {
+        "indice": 901519,
+        "columna": "user_id",
+        "valor_original": "U423418",
+        "valor_contaminado": "'\\tU423418\\t'",
+        "problema": "Espacios extra o caracteres especiales"
+      },
+      {
+        "indice": 3102,
+        "columna": "user_id",
+        "valor_original": "U491347",
+        "valor_contaminado": "'*U491347*'",
+        "problema": "Espacios extra o caracteres especiales"
+      },
+      {
+        "indice": 517368,
+        "columna": "user_id",
+        "valor_original": "U414699",
+        "valor_contaminado": "'\\tU414699\\t'",
+        "problema": "Espacios extra o caracteres especiales"
+      }
+    ]
+  }
+}
